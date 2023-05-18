@@ -1,0 +1,15 @@
+{
+    "Goals": [
+        {
+            "Name": "Maximal Coverage",
+            "Strictness": 0.9
+        },
+        {
+            "Name": "Minimal Indexes"
+        }
+    ],
+    "Rules":
+    {
+        "Maximum Number of Indexes": 3
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "Scans": [
+        {
+            "Scan ID": "Scan A",
+            "Sequential Scan Cost": 100,
+            "Index Costs": [
+                {
+                    "Index OID": "Index 1",
+                    "Cost": 50
+                },
+                {
+                    "Index OID": "Index 3",
+                    "Cost": 42
+                }
+            ]
+        },
+        {
+            "Scan ID": "Scan B",
+            "Sequential Scan Cost": 150,
+            "Index Costs": []
+        },
+        {
+            "Scan ID": "Scan C",
+            "Sequential Scan Cost": 30,
+            "Index Costs": [
+                {
+                    "Index OID": "Index 2",
+                    "Cost": 25
+                },
+                {
+                    "Index OID": "Index 3",
+                    "Cost": 20
+                }
+            ]
+        }
+    ],
+    "Indexes": [
+        {
+            "Index OID": "Index 1",
+            "Index Write Overhead": 5
+        },
+        {
+            "Index OID": "Index 2",
+            "Index Write Overhead": 4
+        },
+        {
+            "Index OID": "Index 3",
+            "Index Write Overhead": 8
+        }
+    ]
+}
