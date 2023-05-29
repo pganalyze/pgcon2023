@@ -105,7 +105,7 @@ def solve_model(model, time_limit, warm_start=None):
 
     solver = cp_model.CpSolver()
     solver.parameters.random_seed = 0
-    solver.parameters.num_search_workers = 8
+    solver.parameters.num_search_workers = 16
     solver.parameters.max_time_in_seconds = time_limit
     status = solver.Solve(model)
     status_name = solver.StatusName(status).capitalize()

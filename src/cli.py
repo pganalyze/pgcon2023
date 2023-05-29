@@ -35,7 +35,7 @@ def get_cli_args():
         nargs="?",
         default=999999.0,
         type=float,
-        help="time limit (seconds)")
+        help="time limit allowed for each goal (seconds)")
 
     parser.add_argument(
         "-v",
