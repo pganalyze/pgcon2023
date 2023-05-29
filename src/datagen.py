@@ -1,130 +1,116 @@
-Old function to generate custom instances, adapt it here.
+"""Generate custom instances."""
 
 
-def dummy_data(num_scans,
-               num_pind = None,
-               seed = 0):
-               num_pind=None,
-               seed=0):
-    """Generates realistic(-ish) data for an instance of size num_scans.
-    Args:
-      num_scans: The total number of scans.
-      num_pind: The number of possible indexes to consider (None will use the default values).
-      seed: The random seed.
-    
-    Returns dictionary of:
-      num_scans: The number of scans.
-      num_eind: The number of existing indexes.
-      num_pind: The number of possible indexes.
-      cost_eind_0: Cost matrix of E^0.
-      cost_eind_r: Cost matrix of E^r.
-      cost_eind_b: Cost matrix of E^b.
-      cost_pind_0: Cost matrix of C^0.
-      cost_pind_r: Cost matrix of C^r.
-      cost_pind_b: Cost matrix of C^b.
-      cost_read: Cost array of sequential readings.
-      eind_iwo: IWO array of the existing indexes.
-      pind_iwo: IWO array of the possible indexes.
-      spm: Scans per minute metric for each scan.
-    """
-    random.seed(seed)
-    
-    # Min/max number of existing and possible indexes.
-    min_num_eind = 1
-    max_num_eind = 5
-    if num_pind is None:
-        min_num_pind = 5
-        max_num_pind = 20
-    else:
-        min_num_pind = num_pind
-        max_num_pind = num_pind
-    # Min/max number of scans covered by an index (as a fraction of the number of scans).
-    min_scans_cov = 0.1
-    max_scans_cov = 0.25
-    
-    # Min/max value of the cost of a scan by an index.
-    min_index_cost = 1
-    max_index_cost = 40
-    
-    # Min/max value of the cost of a scan by sequential reading.
-    min_read_cost = 75
-    max_read_cost = 100
-    
-    # Min/max value for the IWO of an index.
-    min_iwo = 0.05
-    max_iwo = 0.25
-    # Min/max value for the scans per minute.
-    min_spm = 0.1
-    max_spm = 10
-    
-    # Generate the data.
-    num_eind = random.randint(min_num_eind, max_num_eind)
-    num_pind = random.randint(min_num_pind, max_num_pind)
-    def generate_cost_base(n):
-        """
-        Generates a list of lists of tuples for the costs of a set of indexes "base". For example,
-        base[2][4] = (7, 21.42) means that for index 2, the 4th scan that it covers is scan 7, and
-        the cost associated with that coverage is 21.42.
-        """
-        base = []
-        for index in range(n):
-            num_covered_scans = max(round(random.uniform(min_scans_cov, max_scans_cov)*num_scans), 1)
-            covered_scans = random.sample(range(num_scans), num_covered_scans)
-            covered_scans_costs = [round(random.uniform(min_index_cost, max_index_cost)) for scan in range(num_covered_scans)] # <-- CHANGE TO round(X, 2)
-            index = list(zip(covered_scans, covered_scans_costs))
-            base.append(index)
-        return base
-        
-    cost_eind_base = generate_cost_base(num_eind)
-    cost_pind_base = generate_cost_base(num_pind)
-    def generate_cost_0(base):
-        """Transforms the cost base into a matrix M^0."""
-        matrix = [[0 for _ in range(num_scans)] for _ in range(len(base))]
-        for index in range(len(base)):
-            for scan in base[index]:
-                matrix[index][scan[0]] = scan[1]
-        return matrix
-    cost_eind_0 = generate_cost_0(cost_eind_base)
-    cost_pind_0 = generate_cost_0(cost_pind_base)
-    cost_read = [round(random.uniform(min_read_cost, max_read_cost)) for scan in range(num_scans)] # <-- CHANGE TO round(X, 2)
-    
-    def generate_cost_r(base):
-        """Transforms the cost base into a matrix M^r."""
-        matrix = [[cost_read[j] for j in range(num_scans)] for _ in range(len(base))]
-        for index in range(len(base)):
-            for scan in base[index]:
-                matrix[index][scan[0]] = scan[1]
-        return matrix
-    cost_eind_r = generate_cost_r(cost_eind_base)
-    cost_pind_r = generate_cost_r(cost_pind_base)
-    def generate_cost_b(base):
-        """Transforms the cost base into a matrix M^b."""
-        matrix = [[0 for _ in range(num_scans)] for _ in range(len(base))]
-        for index in range(len(base)):
-            for scan in base[index]:
-                matrix[index][scan[0]] = 1
-        return matrix
-    cost_eind_b = generate_cost_b(cost_eind_base)
-    cost_pind_b = generate_cost_b(cost_pind_base)
-    # eind_iwo = [round(random.uniform(min_iwo, max_iwo), 2) for ei in range(num_eind)]
-    # pind_iwo = [round(random.uniform(min_iwo, max_iwo), 2) for pi in range(num_pind)]
-    eind_iwo = [round(random.uniform(min_iwo, max_iwo)*100) for ei in range(num_eind)]
-    pind_iwo = [round(random.uniform(min_iwo, max_iwo)*100) for pi in range(num_pind)]
-    # spm = [round(random.uniform(min_spm, max_spm), 2) for j in range(num_scans)]
-    spm = [round(random.uniform(min_spm, max_spm)*10) for j in range(num_scans)]
-    
-    data = dict()
-    data['num_scans'] = num_scans
-    data['num_eind'] = num_eind
-    data['num_pind'] = num_pind
-    data['cost_eind_0'] = cost_eind_0
-    data['cost_eind_r'] = cost_eind_r
-    data['cost_eind_b'] = cost_eind_b
-    data['cost_pind_0'] = cost_pind_0
-    data['cost_pind_r'] = cost_pind_r
-    data['cost_pind_b'] = cost_pind_b
-    data['cost_read'] = cost_read
-    data['eind_iwo'] = eind_iwo
-    data['pind_iwo'] = pind_iwo
-    data['spm'] = spm
-    return data
+import json
+import random
+import sys
+
+
+# IMPORTANT: All values below (except for FRAC_SCANS_COV_*) must be integers.
+
+
+SEED = None                # Leave to None to get a random seed every time
+
+NUM_SCANS_MIN = 40         # Minimum number of scans
+NUM_SCANS_MAX = 60         # Maximum number of scans
+SCAN_INDEX_COST_MIN = 10   # Minimum scan cost that can be provided by an index
+SCAN_INDEX_COST_MAX = 100  # Maximum scan cost that can be provided by an index
+SCAN_READ_COST_MIN = 150   # Minimum scan read cost
+SCAN_READ_COST_MAX = 300   # Maximum scan read cost
+
+NUM_INDEXES_MIN = 50       # Minimum number of indexes
+NUM_INDEXES_MAX = 100      # Maximum number of indexes
+IWO_MIN = 10               # Minimum IWO of an index
+IWO_MAX = 30               # Maximum IWO of an index
+FRAC_SCANS_COV_MIN = 0.1   # Minimum fraction of the scans covered by an index
+FRAC_SCANS_COV_MAX = 0.25  # Maximum fraction of the scans covered by an index
+
+
+def generate_instance(filename,
+                      seed,
+                      num_scans_min,
+                      num_scans_max,
+                      scan_index_cost_min,
+                      scan_index_cost_max,
+                      scan_read_cost_min,
+                      scan_read_cost_max,
+                      num_indexes_min,
+                      num_indexes_max,
+                      iwo_min,
+                      iwo_max,
+                      frac_scans_cov_min,
+                      frac_scans_cov_max):
+    """Generate an instance and save it to a file."""
+    if seed is not None:
+        random.seed(seed)
+
+    assert isinstance(num_scans_min, int)
+    assert isinstance(num_scans_max, int)
+    assert isinstance(scan_index_cost_min, int)
+    assert isinstance(scan_index_cost_max, int)
+    assert isinstance(scan_read_cost_min, int)
+    assert isinstance(scan_read_cost_max, int)
+    assert isinstance(num_indexes_min, int)
+    assert isinstance(num_indexes_max, int)
+    assert isinstance(iwo_min, int)
+    assert isinstance(iwo_max, int)
+
+    assert 0 < num_scans_min <= num_scans_max
+    assert 0 < scan_index_cost_min <= scan_index_cost_max
+    assert 0 < scan_read_cost_min <= scan_read_cost_max
+    assert scan_index_cost_min < scan_read_cost_max
+    assert 0 < num_indexes_min <= num_indexes_max
+    assert 0 < iwo_min <= iwo_max
+    assert 0 < frac_scans_cov_min <= frac_scans_cov_max <= 1
+
+    data = {"Scans": [],
+            "Indexes": []}
+
+    num_scans = random.randint(num_scans_min, num_scans_max)
+
+    for scan in range(num_scans):
+        data["Scans"].append({"Scan ID": f"Scan {scan}",
+                              "Sequential Scan Cost": random.randint(scan_read_cost_min,
+                                                                     scan_read_cost_max),
+                              "Index Costs": []})
+
+    num_indexes = random.randint(num_indexes_min, num_indexes_max)
+
+    for index in range(num_indexes):
+        data["Indexes"].append({"Index OID": f"Index {index}",
+                                "Index Write Overhead": random.randint(iwo_min, iwo_max)})
+
+        # Scans covered by this index
+        covered = random.sample(range(num_scans),
+                                round(num_scans * random.uniform(frac_scans_cov_min,
+                                                                 frac_scans_cov_max)))
+        for scan in covered:
+            # The read cost should always be strictly worse than the cost of the index
+            read_cost = data["Scans"][scan]["Sequential Scan Cost"]
+            if read_cost <= scan_index_cost_max:
+                max_cost = read_cost - 1
+            else:
+                max_cost = scan_index_cost_max
+
+            data["Scans"][scan]["Index Costs"].append({"Index OID": f"Index {index}",
+                                                       "Cost": random.randint(scan_index_cost_min,
+                                                                              max_cost)})
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+
+
+if __name__ == "__main__":
+    generate_instance(sys.argv[1],
+                      SEED,
+                      NUM_SCANS_MIN,
+                      NUM_SCANS_MAX,
+                      SCAN_INDEX_COST_MIN,
+                      SCAN_INDEX_COST_MAX,
+                      SCAN_READ_COST_MIN,
+                      SCAN_READ_COST_MAX,
+                      NUM_INDEXES_MIN,
+                      NUM_INDEXES_MAX,
+                      IWO_MIN,
+                      IWO_MAX,
+                      FRAC_SCANS_COV_MIN,
+                      FRAC_SCANS_COV_MAX)
