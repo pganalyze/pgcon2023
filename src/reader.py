@@ -259,13 +259,13 @@ class Reader:
 
         # Default rules if omitted (unconstrained)
         if "Maximum Number of Indexes" in rules:
-            self._settings["Maximum Number of Indexes"] = \
-                rules["Maximum Number of Indexes"]
+            assert rules["Maximum Number of Indexes"] >= 1 # If the maximum number of indexes is <= 0, there is no solution
+            self._settings["Maximum Number of Indexes"] = rules["Maximum Number of Indexes"]
         else:
-            self._settings["Maximum Number of Indexes"] = \
-                self.get_num_indexes()
+            self._settings["Maximum Number of Indexes"] = self.get_num_indexes()
 
         if "Maximum IWO" in rules:
+            assert rules["Maximum IWO"] >= 1  # If the maximum IWO is <= 0, there is no solution
             self._settings["Maximum IWO"] = rules["Maximum IWO"]
         else:
             self._settings["Maximum IWO"] = sum(self._problem["Index IWOs"])
