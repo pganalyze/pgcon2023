@@ -135,7 +135,67 @@ The solving process will be as follows:
 
 ## Model Output
 
-TODO
+A sample output of the model with some comments:
+
+```json
+{
+    "Goals": [                               // List of goals in order
+        {
+            "Minimal Cost": 212              // First goal and its associated value
+        },
+        {
+            "Minimal Indexes": 1             // Second goal and its associated value
+        }
+    ],
+    "Scans": [                               // List of all scans
+        {
+            "Scan ID": "Scan A",             // Scan name
+            "Cost": 42,                      // Best cost for this scan in the solution
+            "Best Covered By": "Index 3"     // Which index offers this cost to the scan
+        },
+        {
+            "Scan ID": "Scan B",
+            "Cost": 150,
+            "Best Covered By": null          // This scan is not covered by any index
+        },
+        {
+            "Scan ID": "Scan C",
+            "Cost": 20,
+            "Best Covered By": "Index 3"
+        }
+    ],
+    "Indexes": [                             // List of all indexes
+        {
+            "Index OID": "Index 1",          // Index name
+            "Selected": false                // Is this index selected in the solution?
+        },
+        {
+            "Index OID": "Index 2",
+            "Selected": false
+        },
+        {
+            "Index OID": "Index 3",
+            "Selected": true
+        }
+    ],
+    "Statistics": {                          // List of statistics
+        "Coverage": {                        // Coverage information
+            "Total": 2,                      // Number of scans convered by indexes
+            "Uncovered": 1                   // Number of scans not covered by any index
+        },
+        "Cost": {                            // Cost information
+            "Total": 212,                    // Total costs of all the scans
+            "Maximum": 150                   // Highest cost found among the scans
+        },
+        "Indexes Used": {                    // Index information
+            "Total": 1                       // Number of indexes present in the solution
+        },
+        "Index Write Overhead": {            // IWO information
+            "Total": 8                       // Combined IWO of all the indexes present in the solution
+        }
+    }
+}
+```
 
 
 ## License
