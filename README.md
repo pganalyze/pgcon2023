@@ -164,20 +164,23 @@ A sample output of the model with some comments:
             "Best Covered By": "Index 3"
         }
     ],
-    "Indexes": [                             // List of all indexes
-        {
-            "Index OID": "Index 1",          // Index name
-            "Selected": false                // Is this index selected in the solution?
-        },
-        {
-            "Index OID": "Index 2",
-            "Selected": false
-        },
-        {
-            "Index OID": "Index 3",
-            "Selected": true
-        }
-    ],
+    "Indexes": {
+        "Existing Indexes": [],              // List of all existing indexes (not implemented yet)
+        "Possible Indexes": [                // List of all possible indexes
+            {
+                "Index OID": "Index 1",      // Index name
+                "Selected": false            // Is this index selected in the solution?
+            },
+            {
+                "Index OID": "Index 2",
+                "Selected": false
+            },
+            {
+                "Index OID": "Index 3",
+                "Selected": true
+            }
+        ]
+    },
     "Statistics": {                          // List of statistics
         "Coverage": {                        // Coverage information
             "Total": 2,                      // Number of scans convered by indexes

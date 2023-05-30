@@ -141,7 +141,9 @@ class Reader:
             new_index["Index OID"] = self.get_index_oid(index)
             new_index["Selected"] = used == 1
             indexes.append(new_index)
-        results["Indexes"] = indexes
+        results["Indexes"] = {}
+        results["Indexes"]["Existing Indexes"] = []
+        results["Indexes"]["Possible Indexes"] = indexes
 
         statistics = {}
 
