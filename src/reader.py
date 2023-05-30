@@ -145,16 +145,25 @@ class Reader:
 
         statistics = {}
 
-        statistics["Covered Scans"] = stats.total_coverage(self, last_solution)
+        # Coverage
+        statistics["Coverage"] = {}
+        statistics["Coverage"]["Total"] = stats.total_coverage(self, last_solution)
+        statistics["Coverage"]["Uncovered"] = self.get_num_scans() - \
+            stats.total_coverage(self,
+                                 last_solution)
 
-        statistics["Unovered Scans"] = self.get_num_scans() - stats.total_coverage(self,
-                                                                                   last_solution)
+        # Cost
+        statistics["Cost"] = {}
+        statistics["Cost"]["Total"] = stats.total_cost(self, last_solution)
+        statistics["Cost"]["Maximum"] = stats.maximum_cost(self, last_solution)
 
-        statistics["Cost"] = stats.total_cost(self, last_solution)
+        # Indexes
+        statistics["Indexes Used"] = {}
+        statistics["Indexes Used"]["Total"] = stats.num_indexes_used(last_solution)
 
-        statistics["Indexes Used"] = stats.num_indexes_used(last_solution)
-
-        statistics["Index Write Overhead"] = stats.total_iwo(self, last_solution)
+        # IWO
+        statistics["Index Write Overhead"] = {}
+        statistics["Index Write Overhead"]["Total"] = stats.total_iwo(self, last_solution)
 
         results["Statistics"] = statistics
 

@@ -85,6 +85,20 @@ def cost_of_scan(rdr,
     return min_value
 
 
+def maximum_cost(rdr,
+                 solution):
+    """Return the highest cost found among the scans."""
+    num_scans = rdr.get_num_scans()
+
+    min_costs = [None for _ in range(num_scans)]
+    for scan in range(num_scans):
+        min_costs[scan] = cost_of_scan(rdr,
+                                       solution,
+                                       scan)
+
+    return max(min_costs)
+
+
 def compute_objective(rdr,
                       goal_name,
                       solution):
