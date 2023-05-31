@@ -58,7 +58,7 @@ class Reader:
 
     def _downscale(self, value):
         """Downscale the value w.r.t. the multiplier."""
-        return round(value / self._multiplier)
+        return value / self._multiplier
 
     def get_scan_id(self, scan):
         """Return the ID of a scan."""
@@ -139,9 +139,9 @@ class Reader:
 
             new_scan["Scan ID"] = self.get_scan_id(scan)
 
-            new_scan["Cost"] = stats.cost_of_scan(self,
-                                                  last_solution,
-                                                  scan)
+            new_scan["Cost"] = self._downscale(stats.cost_of_scan(self,
+                                                                  last_solution,
+                                                                  scan))
 
             index = stats.best_covered_by(self,
                                           last_solution,
@@ -190,8 +190,8 @@ class Reader:
 
         # Cost
         statistics["Cost"] = {}
-        statistics["Cost"]["Total"] = stats.total_cost(self, last_solution)
-        statistics["Cost"]["Maximum"] = stats.maximum_cost(self, last_solution)
+        statistics["Cost"]["Total"] = self._downscale(stats.total_cost(self, last_solution))
+        statistics["Cost"]["Maximum"] = self._downscale(stats.maximum_cost(self, last_solution))
 
         # Indexes
         statistics["Indexes Used"] = {}
@@ -201,9 +201,9 @@ class Reader:
 
         # IWO
         statistics["Index Write Overhead"] = {}
-        statistics["Index Write Overhead"]["Total"] = stats.total_iwo(self, last_solution)
-        statistics["Index Write Overhead"]["Existing"] = stats.eind_iwo(self, last_solution)
-        statistics["Index Write Overhead"]["Possible"] = stats.pind_iwo(self, last_solution)
+        statistics["Index Write Overhead"]["Total"] = self._downscale(stats.total_iwo(self, last_solution))
+        statistics["Index Write Overhead"]["Existing"] = self._downscale(stats.eind_iwo(self, last_solution))
+        statistics["Index Write Overhead"]["Possible"] = self._downscale(stats.pind_iwo(self, last_solution))
 
         results["Statistics"] = statistics
 

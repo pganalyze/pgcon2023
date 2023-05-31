@@ -18,8 +18,8 @@ NUM_INDEXES_MIN = 50          # Minimum number of possible indexes
 NUM_INDEXES_MAX = 100         # Maximum number of possible indexes
 NUM_EXISTING_INDEXES_MIN = 1  # Minimum number of existing indexes
 NUM_EXISTING_INDEXES_MAX = 3  # Maximum number of existing indexes
-IWO_MIN = 10                  # Minimum IWO of an index
-IWO_MAX = 30                  # Maximum IWO of an index
+IWO_MIN = 0.1                 # Minimum IWO of an index
+IWO_MAX = 0.5                 # Maximum IWO of an index
 FRAC_SCANS_COV_MIN = 0.1      # Minimum fraction of the scans covered by an index
 FRAC_SCANS_COV_MAX = 0.25     # Maximum fraction of the scans covered by an index
 
@@ -46,16 +46,16 @@ def generate_instance(filename,
 
     assert isinstance(num_scans_min, int)
     assert isinstance(num_scans_max, int)
-    assert isinstance(scan_index_cost_min, int)
-    assert isinstance(scan_index_cost_max, int)
-    assert isinstance(scan_read_cost_min, int)
-    assert isinstance(scan_read_cost_max, int)
+    assert isinstance(scan_index_cost_min, (float, int))
+    assert isinstance(scan_index_cost_max, (float, int))
+    assert isinstance(scan_read_cost_min, (float, int))
+    assert isinstance(scan_read_cost_max, (float, int))
     assert isinstance(num_indexes_min, int)
     assert isinstance(num_indexes_max, int)
     assert isinstance(num_existing_indexes_min, int)
     assert isinstance(num_existing_indexes_max, int)
-    assert isinstance(iwo_min, int)
-    assert isinstance(iwo_max, int)
+    assert isinstance(iwo_min, (float, int))
+    assert isinstance(iwo_max, (float, int))
 
     assert 0 < num_scans_min <= num_scans_max
     assert 0 < scan_index_cost_min <= scan_index_cost_max
@@ -74,7 +74,7 @@ def generate_instance(filename,
 
     for scan in range(num_scans):
         data["Scans"].append({"Scan ID": f"Scan {scan}",
-                              "Sequential Scan Cost": random.randint(scan_read_cost_min,
+                              "Sequential Scan Cost": random.uniform(scan_read_cost_min,
                                                                      scan_read_cost_max),
                               "Existing Index Costs": [],
                               "Possible Index Costs": []})
@@ -83,7 +83,7 @@ def generate_instance(filename,
         """Add index `index` of type "Possible" or "Existing"."""
         assert index_type in ("Possible", "Existing")
         data[f"{index_type} Indexes"].append({"Index": {"Index OID": f"Index {index}"},
-                                              "Index Write Overhead": random.randint(iwo_min,
+                                              "Index Write Overhead": random.uniform(iwo_min,
                                                                                      iwo_max)})
 
         # Scans covered by this index
@@ -100,7 +100,7 @@ def generate_instance(filename,
 
             data["Scans"][scan][f"{index_type} Index Costs"].append(
                 {"Index OID": f"Index {index}",
-                 "Cost": random.randint(scan_index_cost_min,
+                 "Cost": random.uniform(scan_index_cost_min,
                                         max_cost)})
 
     # Add possible indexes
