@@ -37,7 +37,7 @@ class Reader:
         pretty = f"""
         Number of scans: {self.get_num_scans()}
         Sequential costs: {' '.join(str(x) for x in self.get_read_costs())}
-        Number of indexes: {self.get_num_indexes()}
+        Number of indexes: {self.get_num_indexes()} ({self.get_num_eind()} existing, {self.get_num_pind()} possible)
         Index IWOs: {' '.join(str(x) for x in self._problem['Index IWOs'])}
         Index/scan cost matrix:\n"""
         for row in self._problem["Index Costs (R)"]:
@@ -69,8 +69,16 @@ class Reader:
         return tuple(self._problem['Sequential Scan Costs'])
 
     def get_num_indexes(self):
-        """Return the number of indexes."""
+        """Return the number of indexes (possible and existing)."""
         return len(self._translation['Index OIDs'])
+
+    def get_num_pind(self):
+        """Return the number of possible indexes."""
+        return self._problem["Number of Possible Indexes"]
+
+    def get_num_eind(self):
+        """Return the number of existing indexes."""
+        return self._problem["Number of Existing Indexes"]
 
     def get_index_iwo(self):
         """Return the index write overhead of the indexes."""
@@ -82,7 +90,7 @@ class Reader:
 
     def get_maximum_num_indexes(self):
         """Return the maximum number of indexes constraint value."""
-        return self._settings["Maximum Number of Indexes"]
+        return self._settings["Maximum Number of Possible Indexes"]
 
     def get_maximum_iwo(self):
         """Return the maximum IWO constraint value."""
@@ -135,15 +143,17 @@ class Reader:
 
         results["Scans"] = scans
 
-        indexes = []
+        results["Indexes"] = {}
+        results["Indexes"]["Existing Indexes"] = []
+        results["Indexes"]["Possible Indexes"] = []
         for index, used in enumerate(last_solution):
             new_index = {}
             new_index["Index OID"] = self.get_index_oid(index)
             new_index["Selected"] = used == 1
-            indexes.append(new_index)
-        results["Indexes"] = {}
-        results["Indexes"]["Existing Indexes"] = []
-        results["Indexes"]["Possible Indexes"] = indexes
+            if index < self.get_num_eind():
+                results["Indexes"]["Existing Indexes"].append(new_index)
+            else:
+                results["Indexes"]["Possible Indexes"].append(new_index)
 
         statistics = {}
 
@@ -183,6 +193,9 @@ class Reader:
         """Read the problem data from a serialized JSON object."""
         self._build_translation(problem)
 
+        self._problem["Number of Existing Indexes"] = len(problem["Existing Indexes"])
+        self._problem["Number of Possible Indexes"] = len(problem["Possible Indexes"])
+
         self._problem["Sequential Scan Costs"] = \
             [None for _ in range(len(self._translation["Scan IDs"]))]
         self._problem["Index Costs"] = \
@@ -191,8 +204,8 @@ class Reader:
         self._problem["Index IWOs"] = \
             [None for _ in range(len(self._translation["Index OIDs"]))]
 
-        # There must be at least one index, otherwise there is no problem to solve
-        assert len(self._problem["Index IWOs"]) > 0
+        # There must be at least one possible index, otherwise there is no problem to solve
+        assert len(self._problem["Index IWOs"]) > self.get_num_eind()
 
         # Extract relevant data from the scans
         for scan in problem["Scans"]:
@@ -200,7 +213,7 @@ class Reader:
             scan_sequential_cost = scan["Sequential Scan Cost"]
             self._problem["Sequential Scan Costs"][scan_idx] = scan_sequential_cost
 
-            for index in scan["Index Costs"]:
+            for index in scan["Existing Index Costs"] + scan["Possible Index Costs"]:
                 index_idx = self._translation["Index OIDs"].index(index["Index OID"])
 
                 # If the index cost is not better than the sequential scan cost, ignore it
@@ -211,8 +224,8 @@ class Reader:
                 self._problem["Index Costs"][index_idx][scan_idx] = index["Cost"]
 
         # Extract relevant data from the indexes
-        for index in problem["Indexes"]:
-            index_idx = self._translation["Index OIDs"].index(index["Index OID"])
+        for index in problem["Existing Indexes"] + problem["Possible Indexes"]:
+            index_idx = self._translation["Index OIDs"].index(index["Index"]["Index OID"])
             self._problem["Index IWOs"][index_idx] = index["Index Write Overhead"]
 
         # Build the index cost matrices of type B (a covered scan has a cost of 1, an uncovered scan
@@ -248,7 +261,6 @@ class Reader:
         self._translation["Index OIDs"] = tuple(index["Index"]["Index OID"]
                                                 for index in problem["Existing Indexes"] +
                                                 problem["Possible Indexes"])
-        print(self._translation["Index OIDs"])
 
     def _read_settings(self, settings):
         """Read the optimizer settings from a serialized JSON object.
@@ -272,10 +284,12 @@ class Reader:
 
         # Default rules if omitted (unconstrained)
         if "Maximum Number of Indexes" in rules:
-            assert rules["Maximum Number of Indexes"] >= 1  # If the maximum number of indexes is <= 0, there is no solution
-            self._settings["Maximum Number of Indexes"] = rules["Maximum Number of Indexes"]
+            # If the maximum number of possible indexes is <= 0, there is no solution
+            assert rules["Maximum Number of Possible Indexes"] >= 1
+            self._settings["Maximum Number of Possible Indexes"] = \
+                rules["Maximum Number of Possible Indexes"]
         else:
-            self._settings["Maximum Number of Indexes"] = self.get_num_indexes()
+            self._settings["Maximum Number of Possible Indexes"] = self.get_num_pind()
 
         if "Maximum IWO" in rules:
             assert rules["Maximum IWO"] >= 1  # If the maximum IWO is <= 0, there is no solution

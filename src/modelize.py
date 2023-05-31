@@ -31,7 +31,8 @@ def build_basic_model(problem, settings):
     model.num_indexes = len(model.index_iwo)
 
     # Misc.
-    model.max_num_indexes = settings["Maximum Number of Indexes"]
+    model.max_num_indexes = settings["Maximum Number of Possible Indexes"] + \
+        problem["Number of Existing Indexes"]  # Since einds are fixed, they must be included here
     model.max_iwo = settings["Maximum IWO"]
 
     ### Objective
@@ -42,6 +43,10 @@ def build_basic_model(problem, settings):
 
     # x[i] indicates if index i is selected in the solution
     model.x = [model.NewBoolVar(f"x_{i}") for i in range(model.num_indexes)]
+
+    # Existing indexes are always selected in the solution
+    for eind in range(problem["Number of Existing Indexes"]):
+        model.Add(model.x[eind] == 1)
 
     ### Auxiliary variables
 
@@ -74,7 +79,7 @@ def build_basic_model(problem, settings):
 
     ### Hard constraints (optimizer settings)
 
-    # Maximum Number of Indexes
+    # Maximum Number of Possible Indexes
     model.Add(sum(model.x) <= model.max_num_indexes)
 
     # Maximum IWO
