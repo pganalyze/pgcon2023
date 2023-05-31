@@ -107,11 +107,13 @@ def generate_instance(filename,
                                         max_cost)})
 
     # Add possible indexes
-    for index in range(random.randint(num_indexes_min, num_indexes_max)):
+    num_possible_indexes = random.randint(num_indexes_min, num_indexes_max)
+    for index in range(num_possible_indexes):
         _add_index(index, "Possible")
 
     # Add existing indexes
-    for index in range(random.randint(num_existing_indexes_min, num_existing_indexes_max)):
+    for index in range(num_possible_indexes, num_possible_indexes +
+                       random.randint(num_existing_indexes_min, num_existing_indexes_max)):
         _add_index(index, "Existing")
 
     with open(filename, "w", encoding="utf-8") as f:

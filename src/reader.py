@@ -245,8 +245,10 @@ class Reader:
         # Ignore scans that have no sequential cost
         self._translation["Scan IDs"] = tuple(scan["Scan ID"] for scan in problem["Scans"]
                                               if scan["Sequential Scan Cost"] is not None)
-        self._translation["Index OIDs"] = tuple(index["Index OID"]
-                                                for index in problem["Indexes"])
+        self._translation["Index OIDs"] = tuple(index["Index"]["Index OID"]
+                                                for index in problem["Existing Indexes"] +
+                                                problem["Possible Indexes"])
+        print(self._translation["Index OIDs"])
 
     def _read_settings(self, settings):
         """Read the optimizer settings from a serialized JSON object.
