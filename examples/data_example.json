@@ -2,3518 +2,3223 @@
     "Scans": [
         {
             "Scan ID": "Scan 0",
-            "Sequential Scan Cost": 182.49371074086736,
-            "Existing Index Costs": [],
+            "Sequential Scan Cost": 266.67,
+            "Existing Index Costs": [
+                {
+                    "Index OID": 95,
+                    "Cost": 46.44
+                }
+            ],
             "Possible Index Costs": [
                 {
-                    "Index OID": 4,
-                    "Cost": 12.66066661697551
+                    "Index OID": 8,
+                    "Cost": 34.58
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 57.33676487012883
+                    "Index OID": 10,
+                    "Cost": 52.26
                 },
                 {
                     "Index OID": 15,
-                    "Cost": 12.971069377211016
+                    "Cost": 71.06
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 52.53102309756233
+                    "Index OID": 17,
+                    "Cost": 59.41
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 15.178848090512815
+                    "Index OID": 20,
+                    "Cost": 53.06
                 },
                 {
-                    "Index OID": 26,
-                    "Cost": 19.452948591194364
+                    "Index OID": 25,
+                    "Cost": 84.65
                 },
                 {
-                    "Index OID": 35,
-                    "Cost": 47.1851670960297
+                    "Index OID": 28,
+                    "Cost": 28.0
                 },
                 {
-                    "Index OID": 41,
-                    "Cost": 69.77357253020384
+                    "Index OID": 32,
+                    "Cost": 86.5
                 },
                 {
-                    "Index OID": 43,
-                    "Cost": 73.7903635512807
+                    "Index OID": 37,
+                    "Cost": 55.2
                 },
                 {
-                    "Index OID": 46,
-                    "Cost": 98.43883727817335
-                },
-                {
-                    "Index OID": 50,
-                    "Cost": 64.61140687928676
-                },
-                {
-                    "Index OID": 55,
-                    "Cost": 49.99394461762711
-                },
-                {
-                    "Index OID": 56,
-                    "Cost": 40.483642402990014
+                    "Index OID": 58,
+                    "Cost": 80.07
                 },
                 {
                     "Index OID": 61,
-                    "Cost": 98.39197582858294
+                    "Cost": 33.95
                 },
                 {
-                    "Index OID": 78,
-                    "Cost": 41.7130921869294
+                    "Index OID": 64,
+                    "Cost": 79.66
+                },
+                {
+                    "Index OID": 69,
+                    "Cost": 85.78
+                },
+                {
+                    "Index OID": 74,
+                    "Cost": 24.98
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 32.55
+                },
+                {
+                    "Index OID": 87,
+                    "Cost": 66.61
+                },
+                {
+                    "Index OID": 89,
+                    "Cost": 60.71
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 64.62
                 }
             ]
         },
         {
             "Scan ID": "Scan 1",
-            "Sequential Scan Cost": 251.52398885830672,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 12.71876523925877
-                }
-            ],
+            "Sequential Scan Cost": 181.04,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 4,
-                    "Cost": 80.35374033795294
+                    "Index OID": 0,
+                    "Cost": 54.05
                 },
                 {
-                    "Index OID": 12,
-                    "Cost": 41.60921312520568
+                    "Index OID": 1,
+                    "Cost": 62.22
+                },
+                {
+                    "Index OID": 3,
+                    "Cost": 53.04
+                },
+                {
+                    "Index OID": 6,
+                    "Cost": 11.29
+                },
+                {
+                    "Index OID": 11,
+                    "Cost": 33.39
                 },
                 {
                     "Index OID": 14,
-                    "Cost": 18.54110776718858
+                    "Cost": 31.2
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 79.3782207540215
+                    "Index OID": 17,
+                    "Cost": 67.17
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 27.6820391474008
+                    "Index OID": 20,
+                    "Cost": 58.46
                 },
                 {
-                    "Index OID": 32,
-                    "Cost": 82.32059367568526
+                    "Index OID": 28,
+                    "Cost": 20.51
                 },
                 {
-                    "Index OID": 33,
-                    "Cost": 21.409719335929555
-                },
-                {
-                    "Index OID": 34,
-                    "Cost": 86.40614072379621
-                },
-                {
-                    "Index OID": 39,
-                    "Cost": 40.64289687283477
-                },
-                {
-                    "Index OID": 45,
-                    "Cost": 59.443217718678255
+                    "Index OID": 42,
+                    "Cost": 55.94
                 },
                 {
                     "Index OID": 46,
-                    "Cost": 41.58744667357116
+                    "Cost": 92.19
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 41.6486231152709
+                    "Index OID": 48,
+                    "Cost": 87.27
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 16.151900137476115
+                    "Index OID": 50,
+                    "Cost": 25.93
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 71.73846257745215
+                    "Index OID": 56,
+                    "Cost": 54.83
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 85.78170234686372
+                    "Index OID": 59,
+                    "Cost": 96.96
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 79.28039703332824
+                    "Index OID": 60,
+                    "Cost": 23.49
+                },
+                {
+                    "Index OID": 69,
+                    "Cost": 58.92
+                },
+                {
+                    "Index OID": 73,
+                    "Cost": 32.15
                 }
             ]
         },
         {
             "Scan ID": "Scan 2",
-            "Sequential Scan Cost": 243.29556466668436,
+            "Sequential Scan Cost": 179.38,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
+                    "Index OID": 1,
+                    "Cost": 21.82
+                },
+                {
+                    "Index OID": 7,
+                    "Cost": 93.47
+                },
+                {
                     "Index OID": 12,
-                    "Cost": 17.585288590813768
+                    "Cost": 73.33
                 },
                 {
                     "Index OID": 14,
-                    "Cost": 26.889155727382093
+                    "Cost": 58.09
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 33.606165599297235
+                    "Index OID": 20,
+                    "Cost": 61.22
                 },
                 {
-                    "Index OID": 38,
-                    "Cost": 73.43414926442162
+                    "Index OID": 23,
+                    "Cost": 13.01
                 },
                 {
-                    "Index OID": 43,
-                    "Cost": 96.40121170250916
+                    "Index OID": 24,
+                    "Cost": 99.26
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 42.06377357624819
+                    "Index OID": 31,
+                    "Cost": 67.63
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 66.57366584428249
+                    "Index OID": 33,
+                    "Cost": 96.21
                 },
                 {
-                    "Index OID": 56,
-                    "Cost": 27.035732496096088
+                    "Index OID": 36,
+                    "Cost": 55.63
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 20.02811698954685
+                    "Index OID": 46,
+                    "Cost": 50.43
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 97.70005590096675
+                    "Index OID": 49,
+                    "Cost": 27.7
+                },
+                {
+                    "Index OID": 51,
+                    "Cost": 87.12
+                },
+                {
+                    "Index OID": 62,
+                    "Cost": 31.62
+                },
+                {
+                    "Index OID": 63,
+                    "Cost": 92.29
+                },
+                {
+                    "Index OID": 69,
+                    "Cost": 63.62
+                },
+                {
+                    "Index OID": 78,
+                    "Cost": 49.17
+                },
+                {
+                    "Index OID": 86,
+                    "Cost": 63.53
+                },
+                {
+                    "Index OID": 88,
+                    "Cost": 55.6
+                },
+                {
+                    "Index OID": 90,
+                    "Cost": 95.07
+                },
+                {
+                    "Index OID": 92,
+                    "Cost": 12.72
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 31.94
                 }
             ]
         },
         {
             "Scan ID": "Scan 3",
-            "Sequential Scan Cost": 242.08192087472247,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 56.354960284672465
-                }
-            ],
+            "Sequential Scan Cost": 290.59,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 6,
-                    "Cost": 78.51624540933642
+                    "Index OID": 1,
+                    "Cost": 89.35
                 },
                 {
-                    "Index OID": 9,
-                    "Cost": 50.1220323347375
+                    "Index OID": 2,
+                    "Cost": 43.6
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 92.5403878202453
+                    "Index OID": 19,
+                    "Cost": 48.01
                 },
                 {
-                    "Index OID": 13,
-                    "Cost": 23.769866220398296
+                    "Index OID": 29,
+                    "Cost": 82.06
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 91.86042120226178
+                    "Index OID": 36,
+                    "Cost": 47.25
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 72.80085991895665
-                },
-                {
-                    "Index OID": 39,
-                    "Cost": 30.00495872494325
-                },
-                {
-                    "Index OID": 49,
-                    "Cost": 12.562261104827286
-                },
-                {
-                    "Index OID": 50,
-                    "Cost": 12.17473312211451
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 62.34282250453495
+                    "Index OID": 65,
+                    "Cost": 98.76
                 },
                 {
                     "Index OID": 71,
-                    "Cost": 21.004327529432125
+                    "Cost": 72.8
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 42.05367018623393
+                    "Index OID": 77,
+                    "Cost": 10.95
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 47.73
                 }
             ]
         },
         {
             "Scan ID": "Scan 4",
-            "Sequential Scan Cost": 232.4627670836541,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 63.53501847683404
-                }
-            ],
+            "Sequential Scan Cost": 188.53,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 15,
-                    "Cost": 61.17938722343131
+                    "Index OID": 0,
+                    "Cost": 86.22
                 },
                 {
-                    "Index OID": 16,
-                    "Cost": 20.028992731156777
+                    "Index OID": 10,
+                    "Cost": 99.06
                 },
                 {
                     "Index OID": 18,
-                    "Cost": 51.526651170078274
+                    "Cost": 38.39
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 63.552450012938486
+                    "Index OID": 19,
+                    "Cost": 34.25
                 },
                 {
-                    "Index OID": 44,
-                    "Cost": 95.9433055918068
+                    "Index OID": 25,
+                    "Cost": 80.02
                 },
                 {
-                    "Index OID": 48,
-                    "Cost": 55.377223221027805
+                    "Index OID": 26,
+                    "Cost": 20.04
+                },
+                {
+                    "Index OID": 29,
+                    "Cost": 45.67
+                },
+                {
+                    "Index OID": 38,
+                    "Cost": 42.13
+                },
+                {
+                    "Index OID": 46,
+                    "Cost": 52.1
                 },
                 {
                     "Index OID": 49,
-                    "Cost": 85.01572862281772
+                    "Cost": 87.72
                 },
                 {
                     "Index OID": 53,
-                    "Cost": 36.91575637557209
+                    "Cost": 78.98
                 },
                 {
                     "Index OID": 58,
-                    "Cost": 77.89575974328035
-                },
-                {
-                    "Index OID": 63,
-                    "Cost": 28.092924157430073
+                    "Cost": 61.81
                 },
                 {
                     "Index OID": 66,
-                    "Cost": 72.42773777698889
+                    "Cost": 34.09
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 50.89033151205607
+                    "Index OID": 67,
+                    "Cost": 74.77
+                },
+                {
+                    "Index OID": 72,
+                    "Cost": 45.71
+                },
+                {
+                    "Index OID": 75,
+                    "Cost": 18.96
+                },
+                {
+                    "Index OID": 79,
+                    "Cost": 16.88
                 },
                 {
                     "Index OID": 81,
-                    "Cost": 37.35974589022863
+                    "Cost": 17.17
                 }
             ]
         },
         {
             "Scan ID": "Scan 5",
-            "Sequential Scan Cost": 276.3447165291922,
-            "Existing Index Costs": [],
+            "Sequential Scan Cost": 246.22,
+            "Existing Index Costs": [
+                {
+                    "Index OID": 95,
+                    "Cost": 47.81
+                }
+            ],
             "Possible Index Costs": [
                 {
-                    "Index OID": 5,
-                    "Cost": 69.84496186165431
+                    "Index OID": 1,
+                    "Cost": 60.31
                 },
                 {
-                    "Index OID": 17,
-                    "Cost": 34.65000182372583
+                    "Index OID": 8,
+                    "Cost": 87.79
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 36.3308532124945
+                    "Index OID": 9,
+                    "Cost": 59.75
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 79.22805887094398
+                    "Index OID": 10,
+                    "Cost": 50.85
                 },
                 {
-                    "Index OID": 41,
-                    "Cost": 70.23604693977606
+                    "Index OID": 13,
+                    "Cost": 87.12
                 },
                 {
-                    "Index OID": 42,
-                    "Cost": 69.72808713824105
+                    "Index OID": 15,
+                    "Cost": 79.91
                 },
                 {
-                    "Index OID": 44,
-                    "Cost": 33.70717684151653
+                    "Index OID": 25,
+                    "Cost": 78.15
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 11.978083825530806
+                    "Index OID": 26,
+                    "Cost": 90.52
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 24.310575640743515
+                    "Index OID": 27,
+                    "Cost": 20.49
+                },
+                {
+                    "Index OID": 53,
+                    "Cost": 46.04
                 },
                 {
                     "Index OID": 58,
-                    "Cost": 80.6299721300043
+                    "Cost": 63.41
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 67.40844042492904
+                    "Index OID": 60,
+                    "Cost": 33.89
+                },
+                {
+                    "Index OID": 67,
+                    "Cost": 90.05
+                },
+                {
+                    "Index OID": 73,
+                    "Cost": 23.15
+                },
+                {
+                    "Index OID": 77,
+                    "Cost": 32.05
+                },
+                {
+                    "Index OID": 90,
+                    "Cost": 60.41
                 }
             ]
         },
         {
             "Scan ID": "Scan 6",
-            "Sequential Scan Cost": 278.6646297353333,
+            "Sequential Scan Cost": 284.48,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 57.07879678116349
-                },
-                {
                     "Index OID": 2,
-                    "Cost": 51.28490304532758
-                },
-                {
-                    "Index OID": 3,
-                    "Cost": 57.76511944928275
-                },
-                {
-                    "Index OID": 5,
-                    "Cost": 11.81515684582266
+                    "Cost": 14.92
                 },
                 {
                     "Index OID": 6,
-                    "Cost": 69.74257671737588
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 98.40920546261447
-                },
-                {
-                    "Index OID": 9,
-                    "Cost": 10.74619548261066
+                    "Cost": 86.01
                 },
                 {
                     "Index OID": 13,
-                    "Cost": 76.81199272705786
+                    "Cost": 93.84
                 },
                 {
-                    "Index OID": 14,
-                    "Cost": 72.0675515173698
+                    "Index OID": 15,
+                    "Cost": 15.91
+                },
+                {
+                    "Index OID": 24,
+                    "Cost": 21.32
                 },
                 {
                     "Index OID": 26,
-                    "Cost": 36.23238629059502
+                    "Cost": 70.72
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 27.12732093312282
+                    "Index OID": 31,
+                    "Cost": 28.47
                 },
                 {
-                    "Index OID": 35,
-                    "Cost": 85.73387531379609
-                },
-                {
-                    "Index OID": 36,
-                    "Cost": 67.63319079006573
-                },
-                {
-                    "Index OID": 37,
-                    "Cost": 28.172012353312745
+                    "Index OID": 32,
+                    "Cost": 53.29
                 },
                 {
                     "Index OID": 41,
-                    "Cost": 19.680357184154268
+                    "Cost": 32.34
+                },
+                {
+                    "Index OID": 43,
+                    "Cost": 49.52
                 },
                 {
                     "Index OID": 48,
-                    "Cost": 42.53827327550874
+                    "Cost": 16.94
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 15.371348750723683
+                    "Index OID": 57,
+                    "Cost": 25.02
                 },
                 {
-                    "Index OID": 60,
-                    "Cost": 67.27133399550057
+                    "Index OID": 58,
+                    "Cost": 55.05
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 34.37385177920932
+                    "Index OID": 63,
+                    "Cost": 56.55
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 40.59897742703369
+                    "Index OID": 84,
+                    "Cost": 34.82
                 },
                 {
-                    "Index OID": 66,
-                    "Cost": 41.877589215286136
+                    "Index OID": 85,
+                    "Cost": 19.52
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 13.834271556969899
-                },
-                {
-                    "Index OID": 70,
-                    "Cost": 16.36370001608111
-                },
-                {
-                    "Index OID": 73,
-                    "Cost": 42.15288100993612
-                },
-                {
-                    "Index OID": 78,
-                    "Cost": 29.341409645064836
+                    "Index OID": 93,
+                    "Cost": 81.12
                 }
             ]
         },
         {
             "Scan ID": "Scan 7",
-            "Sequential Scan Cost": 266.11035376000905,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 73.8506926541041
-                }
-            ],
+            "Sequential Scan Cost": 205.53,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
                     "Index OID": 1,
-                    "Cost": 65.82803973086547
+                    "Cost": 37.4
                 },
                 {
-                    "Index OID": 5,
-                    "Cost": 95.15044281295006
+                    "Index OID": 2,
+                    "Cost": 27.1
                 },
                 {
                     "Index OID": 7,
-                    "Cost": 66.913634136625
+                    "Cost": 20.45
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 52.94918168480489
+                    "Index OID": 11,
+                    "Cost": 68.11
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 69.84739756757516
+                    "Index OID": 18,
+                    "Cost": 50.73
                 },
                 {
-                    "Index OID": 17,
-                    "Cost": 78.21408919610808
+                    "Index OID": 38,
+                    "Cost": 29.34
                 },
                 {
-                    "Index OID": 21,
-                    "Cost": 53.39709917168939
+                    "Index OID": 42,
+                    "Cost": 14.46
                 },
                 {
-                    "Index OID": 22,
-                    "Cost": 13.03297955090312
-                },
-                {
-                    "Index OID": 25,
-                    "Cost": 50.068389707369775
-                },
-                {
-                    "Index OID": 26,
-                    "Cost": 44.75909475073345
-                },
-                {
-                    "Index OID": 30,
-                    "Cost": 37.59456973933804
-                },
-                {
-                    "Index OID": 32,
-                    "Cost": 63.7659116346072
-                },
-                {
-                    "Index OID": 33,
-                    "Cost": 30.514111046721478
-                },
-                {
-                    "Index OID": 35,
-                    "Cost": 43.884300288836116
-                },
-                {
-                    "Index OID": 37,
-                    "Cost": 77.4558317807379
-                },
-                {
-                    "Index OID": 40,
-                    "Cost": 48.69717630611728
+                    "Index OID": 44,
+                    "Cost": 38.07
                 },
                 {
                     "Index OID": 46,
-                    "Cost": 49.41370585081275
+                    "Cost": 55.49
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 18.32331788562767
+                    "Index OID": 54,
+                    "Cost": 22.04
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 29.717921885793146
+                    "Index OID": 63,
+                    "Cost": 34.4
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 22.263779475855394
+                    "Index OID": 70,
+                    "Cost": 88.38
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 42.17363708896817
+                    "Index OID": 82,
+                    "Cost": 49.84
                 },
                 {
-                    "Index OID": 78,
-                    "Cost": 70.79079506020963
+                    "Index OID": 87,
+                    "Cost": 46.57
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 89.93
                 }
             ]
         },
         {
             "Scan ID": "Scan 8",
-            "Sequential Scan Cost": 218.0326611886465,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 82.85948319512727
-                }
-            ],
+            "Sequential Scan Cost": 194.83,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 60.6853141845044
+                    "Index OID": 12,
+                    "Cost": 95.12
                 },
                 {
-                    "Index OID": 5,
-                    "Cost": 29.594556800020296
+                    "Index OID": 30,
+                    "Cost": 48.14
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 83.51509682084392
+                    "Index OID": 43,
+                    "Cost": 89.26
                 },
                 {
-                    "Index OID": 14,
-                    "Cost": 39.18638305497625
+                    "Index OID": 44,
+                    "Cost": 61.03
                 },
                 {
-                    "Index OID": 19,
-                    "Cost": 29.820188652277917
+                    "Index OID": 60,
+                    "Cost": 67.59
                 },
                 {
-                    "Index OID": 21,
-                    "Cost": 19.66124707096237
+                    "Index OID": 63,
+                    "Cost": 91.5
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 83.51554055065371
+                    "Index OID": 66,
+                    "Cost": 41.62
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 10.94959576929645
+                    "Index OID": 76,
+                    "Cost": 63.44
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 63.06086505446533
+                    "Index OID": 80,
+                    "Cost": 60.12
                 },
                 {
-                    "Index OID": 64,
-                    "Cost": 56.32197006519365
+                    "Index OID": 81,
+                    "Cost": 59.88
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 27.4382297075789
+                    "Index OID": 85,
+                    "Cost": 77.9
                 }
             ]
         },
         {
             "Scan ID": "Scan 9",
-            "Sequential Scan Cost": 244.96637280838723,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 69.2754380455138
-                },
-                {
-                    "Index OID": 84,
-                    "Cost": 52.26836383621123
-                }
-            ],
+            "Sequential Scan Cost": 171.31,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 9,
-                    "Cost": 68.982166960145
+                    "Index OID": 4,
+                    "Cost": 82.15
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 34.89140100287858
+                    "Index OID": 8,
+                    "Cost": 43.35
+                },
+                {
+                    "Index OID": 16,
+                    "Cost": 37.59
                 },
                 {
                     "Index OID": 19,
-                    "Cost": 11.93417900444113
+                    "Cost": 32.37
                 },
                 {
-                    "Index OID": 45,
-                    "Cost": 80.75750786004924
+                    "Index OID": 28,
+                    "Cost": 12.84
                 },
                 {
-                    "Index OID": 48,
-                    "Cost": 39.53820234342653
+                    "Index OID": 39,
+                    "Cost": 34.92
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 29.442825949121737
+                    "Index OID": 40,
+                    "Cost": 46.5
+                },
+                {
+                    "Index OID": 42,
+                    "Cost": 95.92
+                },
+                {
+                    "Index OID": 53,
+                    "Cost": 69.85
+                },
+                {
+                    "Index OID": 55,
+                    "Cost": 69.44
                 },
                 {
                     "Index OID": 59,
-                    "Cost": 73.65306049694212
+                    "Cost": 50.81
                 },
                 {
-                    "Index OID": 60,
-                    "Cost": 99.44379225661785
+                    "Index OID": 65,
+                    "Cost": 29.3
                 },
                 {
-                    "Index OID": 64,
-                    "Cost": 39.5952358178485
+                    "Index OID": 67,
+                    "Cost": 19.13
                 },
                 {
                     "Index OID": 71,
-                    "Cost": 84.9461036712144
+                    "Cost": 56.82
+                },
+                {
+                    "Index OID": 73,
+                    "Cost": 85.69
                 },
                 {
                     "Index OID": 77,
-                    "Cost": 91.98721925481999
+                    "Cost": 85.89
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 32.1961737147588
+                    "Index OID": 78,
+                    "Cost": 25.87
+                },
+                {
+                    "Index OID": 79,
+                    "Cost": 96.63
                 },
                 {
                     "Index OID": 82,
-                    "Cost": 82.54518875395418
+                    "Cost": 33.51
+                },
+                {
+                    "Index OID": 85,
+                    "Cost": 18.91
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 40.39
                 }
             ]
         },
         {
             "Scan ID": "Scan 10",
-            "Sequential Scan Cost": 176.3177245424053,
+            "Sequential Scan Cost": 243.85,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
                     "Index OID": 2,
-                    "Cost": 52.866605348128616
+                    "Cost": 50.67
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 27.056565690503827
+                    "Index OID": 3,
+                    "Cost": 77.82
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 34.37712222395324
+                    "Index OID": 7,
+                    "Cost": 72.4
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 76.0111430394189
+                    "Index OID": 9,
+                    "Cost": 90.83
                 },
                 {
-                    "Index OID": 13,
-                    "Cost": 27.21836971464053
-                },
-                {
-                    "Index OID": 16,
-                    "Cost": 52.57669860238464
-                },
-                {
-                    "Index OID": 19,
-                    "Cost": 62.55973426706692
+                    "Index OID": 15,
+                    "Cost": 50.08
                 },
                 {
                     "Index OID": 22,
-                    "Cost": 47.64629026814929
+                    "Cost": 85.08
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 33.70952123036244
+                    "Index OID": 34,
+                    "Cost": 64.61
                 },
                 {
-                    "Index OID": 38,
-                    "Cost": 94.58323978549141
+                    "Index OID": 35,
+                    "Cost": 90.68
                 },
                 {
-                    "Index OID": 39,
-                    "Cost": 87.07757113106324
+                    "Index OID": 36,
+                    "Cost": 93.3
                 },
                 {
-                    "Index OID": 45,
-                    "Cost": 86.4677581229742
+                    "Index OID": 37,
+                    "Cost": 40.86
+                },
+                {
+                    "Index OID": 42,
+                    "Cost": 60.5
                 },
                 {
                     "Index OID": 48,
-                    "Cost": 53.305963347643804
+                    "Cost": 13.31
                 },
                 {
-                    "Index OID": 54,
-                    "Cost": 89.23502117099086
+                    "Index OID": 51,
+                    "Cost": 21.35
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 20.20984739131756
+                    "Index OID": 63,
+                    "Cost": 30.56
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 85.5430741150084
+                    "Index OID": 76,
+                    "Cost": 98.44
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 98.43081845168815
+                    "Index OID": 92,
+                    "Cost": 75.43
                 }
             ]
         },
         {
             "Scan ID": "Scan 11",
-            "Sequential Scan Cost": 170.59218396349257,
+            "Sequential Scan Cost": 297.79,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 13,
-                    "Cost": 33.2322993551783
+                    "Index OID": 0,
+                    "Cost": 31.78
                 },
                 {
-                    "Index OID": 14,
-                    "Cost": 77.86732950977924
+                    "Index OID": 3,
+                    "Cost": 94.74
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 32.528251170772215
+                    "Index OID": 10,
+                    "Cost": 67.92
+                },
+                {
+                    "Index OID": 11,
+                    "Cost": 64.77
+                },
+                {
+                    "Index OID": 16,
+                    "Cost": 48.36
+                },
+                {
+                    "Index OID": 31,
+                    "Cost": 69.46
+                },
+                {
+                    "Index OID": 33,
+                    "Cost": 67.47
                 },
                 {
                     "Index OID": 35,
-                    "Cost": 87.28429939985718
+                    "Cost": 12.51
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 92.99472202637516
-                },
-                {
-                    "Index OID": 55,
-                    "Cost": 68.85557267840798
+                    "Index OID": 52,
+                    "Cost": 50.57
                 },
                 {
                     "Index OID": 58,
-                    "Cost": 30.195918295966663
+                    "Cost": 54.72
                 },
                 {
-                    "Index OID": 63,
-                    "Cost": 16.135888415705345
+                    "Index OID": 64,
+                    "Cost": 15.49
                 },
                 {
-                    "Index OID": 66,
-                    "Cost": 78.54316764281513
+                    "Index OID": 67,
+                    "Cost": 62.68
+                },
+                {
+                    "Index OID": 77,
+                    "Cost": 35.2
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 23.53
+                },
+                {
+                    "Index OID": 89,
+                    "Cost": 29.64
                 }
             ]
         },
         {
             "Scan ID": "Scan 12",
-            "Sequential Scan Cost": 294.5288377702334,
+            "Sequential Scan Cost": 182.75,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 5,
-                    "Cost": 89.85133802934104
+                    "Index OID": 0,
+                    "Cost": 54.45
                 },
                 {
-                    "Index OID": 16,
-                    "Cost": 77.5616439352456
+                    "Index OID": 2,
+                    "Cost": 36.31
                 },
                 {
-                    "Index OID": 20,
-                    "Cost": 94.0953078074429
+                    "Index OID": 18,
+                    "Cost": 67.56
                 },
                 {
                     "Index OID": 31,
-                    "Cost": 74.78737435840243
+                    "Cost": 41.97
                 },
                 {
-                    "Index OID": 46,
-                    "Cost": 17.418385029714987
+                    "Index OID": 35,
+                    "Cost": 26.21
+                },
+                {
+                    "Index OID": 44,
+                    "Cost": 65.0
+                },
+                {
+                    "Index OID": 50,
+                    "Cost": 91.84
                 },
                 {
                     "Index OID": 52,
-                    "Cost": 64.2609973163993
+                    "Cost": 80.25
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 73.82424837538265
+                    "Index OID": 73,
+                    "Cost": 77.02
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 37.323764298842804
+                    "Index OID": 79,
+                    "Cost": 30.94
                 },
                 {
-                    "Index OID": 64,
-                    "Cost": 85.26000170922563
+                    "Index OID": 93,
+                    "Cost": 77.71
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 99.97207525081441
-                },
-                {
-                    "Index OID": 71,
-                    "Cost": 51.67330332005157
-                },
-                {
-                    "Index OID": 72,
-                    "Cost": 13.758619136630813
-                },
-                {
-                    "Index OID": 74,
-                    "Cost": 79.74682295238179
-                },
-                {
-                    "Index OID": 78,
-                    "Cost": 68.45301292236277
-                },
-                {
-                    "Index OID": 81,
-                    "Cost": 78.10478009849761
+                    "Index OID": 94,
+                    "Cost": 68.45
                 }
             ]
         },
         {
             "Scan ID": "Scan 13",
-            "Sequential Scan Cost": 283.05310574588964,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 91.47777033155838
-                }
-            ],
+            "Sequential Scan Cost": 216.92,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 36.89073198782549
+                    "Index OID": 3,
+                    "Cost": 90.03
+                },
+                {
+                    "Index OID": 4,
+                    "Cost": 13.11
                 },
                 {
                     "Index OID": 7,
-                    "Cost": 23.20967576673798
+                    "Cost": 60.11
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 16.084849952557008
-                },
-                {
-                    "Index OID": 9,
-                    "Cost": 81.29159836310446
-                },
-                {
-                    "Index OID": 13,
-                    "Cost": 71.21158229654165
+                    "Index OID": 14,
+                    "Cost": 68.65
                 },
                 {
                     "Index OID": 22,
-                    "Cost": 93.52135631487654
+                    "Cost": 43.73
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 94.29685715954658
+                    "Index OID": 40,
+                    "Cost": 75.82
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 20.243813616145015
+                    "Index OID": 45,
+                    "Cost": 86.35
                 },
                 {
-                    "Index OID": 42,
-                    "Cost": 31.69393232026243
+                    "Index OID": 57,
+                    "Cost": 67.91
                 },
                 {
-                    "Index OID": 47,
-                    "Cost": 97.29335252544958
+                    "Index OID": 75,
+                    "Cost": 51.91
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 56.99906338837952
+                    "Index OID": 77,
+                    "Cost": 65.32
                 },
                 {
-                    "Index OID": 80,
-                    "Cost": 23.9318932579304
+                    "Index OID": 78,
+                    "Cost": 36.37
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 11.582438293974377
+                    "Index OID": 85,
+                    "Cost": 19.17
+                },
+                {
+                    "Index OID": 86,
+                    "Cost": 19.01
                 }
             ]
         },
         {
             "Scan ID": "Scan 14",
-            "Sequential Scan Cost": 164.3815823017497,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 65.35989273545769
-                }
-            ],
+            "Sequential Scan Cost": 228.75,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 3,
-                    "Cost": 20.861208529762948
+                    "Index OID": 1,
+                    "Cost": 30.54
                 },
                 {
-                    "Index OID": 15,
-                    "Cost": 85.11482388802531
+                    "Index OID": 5,
+                    "Cost": 17.75
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 45.469444706149496
+                    "Index OID": 13,
+                    "Cost": 45.04
                 },
                 {
-                    "Index OID": 41,
-                    "Cost": 87.65330953310396
+                    "Index OID": 20,
+                    "Cost": 66.31
                 },
                 {
-                    "Index OID": 47,
-                    "Cost": 48.89671004149114
+                    "Index OID": 23,
+                    "Cost": 40.77
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 34.44796853606756
+                    "Index OID": 36,
+                    "Cost": 43.82
+                },
+                {
+                    "Index OID": 37,
+                    "Cost": 64.78
+                },
+                {
+                    "Index OID": 44,
+                    "Cost": 44.68
                 },
                 {
                     "Index OID": 67,
-                    "Cost": 92.3004059788458
+                    "Cost": 54.24
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 24.595819485491376
+                    "Index OID": 76,
+                    "Cost": 70.3
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 32.67270619716483
+                    "Index OID": 88,
+                    "Cost": 96.26
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 68.11
                 }
             ]
         },
         {
             "Scan ID": "Scan 15",
-            "Sequential Scan Cost": 235.37061814668567,
+            "Sequential Scan Cost": 180.83,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 1,
-                    "Cost": 33.25852308832101
+                    "Index OID": 13,
+                    "Cost": 34.99
                 },
                 {
-                    "Index OID": 2,
-                    "Cost": 75.38699072129248
+                    "Index OID": 16,
+                    "Cost": 15.27
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 39.497658466960424
+                    "Index OID": 19,
+                    "Cost": 40.1
                 },
                 {
-                    "Index OID": 17,
-                    "Cost": 71.09452979976663
+                    "Index OID": 24,
+                    "Cost": 49.81
                 },
                 {
-                    "Index OID": 21,
-                    "Cost": 46.076972242465715
+                    "Index OID": 49,
+                    "Cost": 93.08
                 },
                 {
-                    "Index OID": 22,
-                    "Cost": 42.79201775232385
+                    "Index OID": 53,
+                    "Cost": 53.94
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 42.573928915138254
-                },
-                {
-                    "Index OID": 43,
-                    "Cost": 93.93101154231113
+                    "Index OID": 58,
+                    "Cost": 39.96
                 },
                 {
                     "Index OID": 66,
-                    "Cost": 44.42226160804733
+                    "Cost": 91.4
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 36.06432090248972
+                    "Index OID": 82,
+                    "Cost": 59.12
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 35.79169803901894
+                    "Index OID": 87,
+                    "Cost": 52.62
+                },
+                {
+                    "Index OID": 90,
+                    "Cost": 57.67
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 21.21
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 34.63
                 }
             ]
         },
         {
             "Scan ID": "Scan 16",
-            "Sequential Scan Cost": 171.70822046861318,
+            "Sequential Scan Cost": 219.07,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 4,
-                    "Cost": 40.27162091204788
+                    "Index OID": 5,
+                    "Cost": 28.0
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 61.08128812177359
+                    "Index OID": 12,
+                    "Cost": 18.89
                 },
                 {
-                    "Index OID": 13,
-                    "Cost": 73.12335273144012
-                },
-                {
-                    "Index OID": 19,
-                    "Cost": 18.4038530400871
+                    "Index OID": 18,
+                    "Cost": 79.21
                 },
                 {
                     "Index OID": 20,
-                    "Cost": 96.59224620659226
+                    "Cost": 30.44
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 25.34677810197443
+                    "Index OID": 22,
+                    "Cost": 81.46
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 73.01663936100152
+                    "Index OID": 26,
+                    "Cost": 18.82
                 },
                 {
-                    "Index OID": 32,
-                    "Cost": 25.454671624205332
+                    "Index OID": 38,
+                    "Cost": 30.65
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 16.12726609752032
+                    "Index OID": 41,
+                    "Cost": 86.87
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 16.755219029804714
+                    "Index OID": 43,
+                    "Cost": 78.05
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 94.76889131324621
+                    "Index OID": 44,
+                    "Cost": 36.79
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 10.077861359798273
+                    "Index OID": 46,
+                    "Cost": 11.45
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 75.73831441138981
+                    "Index OID": 56,
+                    "Cost": 80.47
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 15.18191080087539
+                    "Index OID": 78,
+                    "Cost": 52.5
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 37.91868696174622
+                    "Index OID": 79,
+                    "Cost": 28.35
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 13.41
+                },
+                {
+                    "Index OID": 88,
+                    "Cost": 56.27
                 }
             ]
         },
         {
             "Scan ID": "Scan 17",
-            "Sequential Scan Cost": 265.7769520802586,
+            "Sequential Scan Cost": 237.07,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 6,
-                    "Cost": 53.051828203235495
+                    "Index OID": 3,
+                    "Cost": 65.85
                 },
                 {
-                    "Index OID": 14,
-                    "Cost": 73.03659014686437
+                    "Index OID": 16,
+                    "Cost": 45.77
                 },
                 {
                     "Index OID": 20,
-                    "Cost": 23.288210353591328
+                    "Cost": 16.0
                 },
                 {
-                    "Index OID": 22,
-                    "Cost": 11.787902835929833
+                    "Index OID": 23,
+                    "Cost": 88.4
+                },
+                {
+                    "Index OID": 27,
+                    "Cost": 18.85
                 },
                 {
                     "Index OID": 30,
-                    "Cost": 42.82978255164145
+                    "Cost": 78.48
                 },
                 {
-                    "Index OID": 39,
-                    "Cost": 96.02888626838515
+                    "Index OID": 36,
+                    "Cost": 99.09
                 },
                 {
                     "Index OID": 40,
-                    "Cost": 93.3435159665972
+                    "Cost": 55.51
                 },
                 {
-                    "Index OID": 47,
-                    "Cost": 52.260053398253845
+                    "Index OID": 44,
+                    "Cost": 23.26
+                },
+                {
+                    "Index OID": 51,
+                    "Cost": 87.94
                 },
                 {
                     "Index OID": 53,
-                    "Cost": 54.683825036828736
+                    "Cost": 55.08
                 },
                 {
-                    "Index OID": 56,
-                    "Cost": 67.36492466139892
+                    "Index OID": 62,
+                    "Cost": 61.28
                 },
                 {
-                    "Index OID": 59,
-                    "Cost": 90.9777440529882
+                    "Index OID": 65,
+                    "Cost": 97.67
                 },
                 {
-                    "Index OID": 79,
-                    "Cost": 14.995132962117726
+                    "Index OID": 66,
+                    "Cost": 71.6
+                },
+                {
+                    "Index OID": 69,
+                    "Cost": 97.99
+                },
+                {
+                    "Index OID": 70,
+                    "Cost": 94.51
+                },
+                {
+                    "Index OID": 74,
+                    "Cost": 12.09
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 14.9
+                },
+                {
+                    "Index OID": 86,
+                    "Cost": 33.11
                 }
             ]
         },
         {
             "Scan ID": "Scan 18",
-            "Sequential Scan Cost": 282.8548198002084,
+            "Sequential Scan Cost": 158.62,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 6,
-                    "Cost": 61.29182581998861
+                    "Index OID": 11,
+                    "Cost": 23.15
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 74.55475839147444
-                },
-                {
-                    "Index OID": 15,
-                    "Cost": 19.812841710422713
+                    "Index OID": 12,
+                    "Cost": 22.87
                 },
                 {
                     "Index OID": 19,
-                    "Cost": 37.14909489812213
+                    "Cost": 60.14
                 },
                 {
                     "Index OID": 22,
-                    "Cost": 12.658857766085697
+                    "Cost": 18.73
                 },
                 {
-                    "Index OID": 28,
-                    "Cost": 56.960860552141845
+                    "Index OID": 29,
+                    "Cost": 87.63
                 },
                 {
-                    "Index OID": 32,
-                    "Cost": 94.23680351067813
+                    "Index OID": 30,
+                    "Cost": 67.42
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 38.365406877287484
+                    "Index OID": 57,
+                    "Cost": 73.21
                 },
                 {
-                    "Index OID": 40,
-                    "Cost": 65.05633397799704
+                    "Index OID": 62,
+                    "Cost": 28.65
                 },
                 {
-                    "Index OID": 47,
-                    "Cost": 92.09828323823149
-                },
-                {
-                    "Index OID": 50,
-                    "Cost": 88.48077785668103
-                },
-                {
-                    "Index OID": 55,
-                    "Cost": 36.41619199358277
-                },
-                {
-                    "Index OID": 60,
-                    "Cost": 77.85759843396387
-                },
-                {
-                    "Index OID": 63,
-                    "Cost": 25.959111258611287
-                },
-                {
-                    "Index OID": 66,
-                    "Cost": 70.7872424017868
+                    "Index OID": 67,
+                    "Cost": 14.73
                 },
                 {
                     "Index OID": 70,
-                    "Cost": 55.023642014485326
+                    "Cost": 53.14
+                },
+                {
+                    "Index OID": 78,
+                    "Cost": 51.27
+                },
+                {
+                    "Index OID": 83,
+                    "Cost": 65.17
+                },
+                {
+                    "Index OID": 85,
+                    "Cost": 88.88
+                },
+                {
+                    "Index OID": 89,
+                    "Cost": 87.41
+                },
+                {
+                    "Index OID": 90,
+                    "Cost": 72.0
+                },
+                {
+                    "Index OID": 92,
+                    "Cost": 60.01
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 13.78
                 }
             ]
         },
         {
             "Scan ID": "Scan 19",
-            "Sequential Scan Cost": 277.16801039023426,
+            "Sequential Scan Cost": 153.91,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
+                    "Index OID": 4,
+                    "Cost": 84.35
+                },
+                {
                     "Index OID": 5,
-                    "Cost": 89.05876491778244
+                    "Cost": 54.39
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 31.125668971359932
+                    "Index OID": 10,
+                    "Cost": 19.29
                 },
                 {
-                    "Index OID": 39,
-                    "Cost": 69.83468134803422
+                    "Index OID": 21,
+                    "Cost": 25.35
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 11.59805229658397
+                    "Index OID": 26,
+                    "Cost": 75.2
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 21.575647231354203
+                    "Index OID": 42,
+                    "Cost": 24.34
+                },
+                {
+                    "Index OID": 53,
+                    "Cost": 95.44
+                },
+                {
+                    "Index OID": 56,
+                    "Cost": 59.82
                 },
                 {
                     "Index OID": 60,
-                    "Cost": 93.98104984397685
+                    "Cost": 21.18
                 },
                 {
-                    "Index OID": 64,
-                    "Cost": 65.72555952474825
+                    "Index OID": 61,
+                    "Cost": 47.29
+                },
+                {
+                    "Index OID": 69,
+                    "Cost": 26.29
                 },
                 {
                     "Index OID": 70,
-                    "Cost": 57.672340107244565
+                    "Cost": 20.25
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 56.5171778727758
+                    "Index OID": 71,
+                    "Cost": 66.31
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 82.14
                 }
             ]
         },
         {
             "Scan ID": "Scan 20",
-            "Sequential Scan Cost": 178.0702647330737,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 38.08422992981093
-                }
-            ],
+            "Sequential Scan Cost": 166.93,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 1,
-                    "Cost": 58.91873624954025
+                    "Index OID": 5,
+                    "Cost": 46.58
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 46.77171104685057
+                    "Index OID": 13,
+                    "Cost": 83.9
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 98.11507618369875
+                    "Index OID": 18,
+                    "Cost": 66.15
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 22.15687512314705
+                    "Index OID": 30,
+                    "Cost": 68.16
                 },
                 {
-                    "Index OID": 28,
-                    "Cost": 95.1222689208398
+                    "Index OID": 32,
+                    "Cost": 82.53
                 },
                 {
-                    "Index OID": 33,
-                    "Cost": 95.49587176895956
+                    "Index OID": 45,
+                    "Cost": 97.84
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 33.250759429176696
+                    "Index OID": 47,
+                    "Cost": 32.69
                 },
                 {
                     "Index OID": 56,
-                    "Cost": 29.0539786563875
+                    "Cost": 84.88
                 },
                 {
-                    "Index OID": 58,
-                    "Cost": 24.65806378127162
+                    "Index OID": 68,
+                    "Cost": 32.47
                 },
                 {
-                    "Index OID": 60,
-                    "Cost": 65.4919265496611
+                    "Index OID": 70,
+                    "Cost": 44.5
                 },
                 {
-                    "Index OID": 63,
-                    "Cost": 10.759041787203364
+                    "Index OID": 71,
+                    "Cost": 83.02
                 },
                 {
                     "Index OID": 75,
-                    "Cost": 32.933373115376995
-                },
-                {
-                    "Index OID": 80,
-                    "Cost": 61.524692607938995
+                    "Cost": 89.52
                 }
             ]
         },
         {
             "Scan ID": "Scan 21",
-            "Sequential Scan Cost": 199.93248338570606,
+            "Sequential Scan Cost": 248.16,
             "Existing Index Costs": [
                 {
-                    "Index OID": 83,
-                    "Cost": 85.88185789948305
+                    "Index OID": 95,
+                    "Cost": 49.8
                 }
             ],
             "Possible Index Costs": [
                 {
-                    "Index OID": 3,
-                    "Cost": 26.422910702933034
+                    "Index OID": 8,
+                    "Cost": 86.46
                 },
                 {
-                    "Index OID": 4,
-                    "Cost": 71.44788601187304
-                },
-                {
-                    "Index OID": 7,
-                    "Cost": 84.53332930052345
-                },
-                {
-                    "Index OID": 11,
-                    "Cost": 35.099537388853776
+                    "Index OID": 10,
+                    "Cost": 69.78
                 },
                 {
                     "Index OID": 13,
-                    "Cost": 30.649966737113935
-                },
-                {
-                    "Index OID": 14,
-                    "Cost": 90.5158966985628
+                    "Cost": 75.12
                 },
                 {
                     "Index OID": 15,
-                    "Cost": 90.7410226446866
+                    "Cost": 42.94
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 22.81021428679149
+                    "Index OID": 19,
+                    "Cost": 90.11
+                },
+                {
+                    "Index OID": 25,
+                    "Cost": 51.78
+                },
+                {
+                    "Index OID": 28,
+                    "Cost": 38.87
                 },
                 {
                     "Index OID": 40,
-                    "Cost": 69.18507317235024
+                    "Cost": 51.69
                 },
                 {
-                    "Index OID": 48,
-                    "Cost": 80.74592831958863
+                    "Index OID": 44,
+                    "Cost": 73.94
                 },
                 {
-                    "Index OID": 51,
-                    "Cost": 85.40637656876928
+                    "Index OID": 49,
+                    "Cost": 57.09
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 76.41208265439508
+                    "Index OID": 52,
+                    "Cost": 40.25
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 89.3802692805735
+                    "Index OID": 55,
+                    "Cost": 21.68
                 },
                 {
-                    "Index OID": 66,
-                    "Cost": 58.57696319435061
+                    "Index OID": 56,
+                    "Cost": 55.64
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 74.43196642274074
+                    "Index OID": 64,
+                    "Cost": 34.79
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 34.31100282563129
+                    "Index OID": 65,
+                    "Cost": 24.41
                 },
                 {
-                    "Index OID": 75,
-                    "Cost": 69.63373308708421
+                    "Index OID": 67,
+                    "Cost": 14.29
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 20.80042132036074
+                    "Index OID": 77,
+                    "Cost": 20.87
+                },
+                {
+                    "Index OID": 80,
+                    "Cost": 91.19
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 70.14
                 }
             ]
         },
         {
             "Scan ID": "Scan 22",
-            "Sequential Scan Cost": 164.35458983500465,
+            "Sequential Scan Cost": 179.31,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 8,
-                    "Cost": 59.04098171480351
+                    "Index OID": 1,
+                    "Cost": 85.77
                 },
                 {
-                    "Index OID": 14,
-                    "Cost": 64.4282489268906
+                    "Index OID": 7,
+                    "Cost": 33.14
                 },
                 {
-                    "Index OID": 15,
-                    "Cost": 79.17706675517685
+                    "Index OID": 18,
+                    "Cost": 87.62
                 },
                 {
-                    "Index OID": 33,
-                    "Cost": 53.8653468287635
+                    "Index OID": 20,
+                    "Cost": 16.08
+                },
+                {
+                    "Index OID": 24,
+                    "Cost": 20.55
                 },
                 {
                     "Index OID": 34,
-                    "Cost": 32.470873925316326
-                },
-                {
-                    "Index OID": 36,
-                    "Cost": 97.95111100999004
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 28.331655927336072
+                    "Cost": 85.75
                 },
                 {
                     "Index OID": 47,
-                    "Cost": 78.5498614602515
+                    "Cost": 93.81
                 },
                 {
                     "Index OID": 49,
-                    "Cost": 10.842130841640593
+                    "Cost": 61.45
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 19.27275693824126
+                    "Index OID": 50,
+                    "Cost": 51.85
+                },
+                {
+                    "Index OID": 51,
+                    "Cost": 24.25
                 },
                 {
                     "Index OID": 57,
-                    "Cost": 48.33011527179356
+                    "Cost": 89.91
                 },
                 {
-                    "Index OID": 60,
-                    "Cost": 75.46586144254901
+                    "Index OID": 58,
+                    "Cost": 54.6
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 93.80043741307756
+                    "Index OID": 59,
+                    "Cost": 70.28
                 },
                 {
-                    "Index OID": 78,
-                    "Cost": 48.214519073017975
+                    "Index OID": 69,
+                    "Cost": 69.2
+                },
+                {
+                    "Index OID": 71,
+                    "Cost": 56.16
+                },
+                {
+                    "Index OID": 73,
+                    "Cost": 72.21
+                },
+                {
+                    "Index OID": 79,
+                    "Cost": 50.26
+                },
+                {
+                    "Index OID": 87,
+                    "Cost": 35.2
+                },
+                {
+                    "Index OID": 88,
+                    "Cost": 96.4
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 37.02
                 }
             ]
         },
         {
             "Scan ID": "Scan 23",
-            "Sequential Scan Cost": 278.84544766794806,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 25.82005098116749
-                }
-            ],
+            "Sequential Scan Cost": 151.5,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 1,
-                    "Cost": 39.362949424514284
+                    "Index OID": 3,
+                    "Cost": 95.78
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 70.97718242904045
+                    "Index OID": 7,
+                    "Cost": 21.54
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 82.82813335770484
+                    "Index OID": 27,
+                    "Cost": 84.32
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 44.3932653878365
+                    "Index OID": 33,
+                    "Cost": 80.18
                 },
                 {
-                    "Index OID": 32,
-                    "Cost": 76.98866971829251
+                    "Index OID": 39,
+                    "Cost": 71.52
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 21.49777112086528
+                    "Index OID": 71,
+                    "Cost": 93.82
                 },
                 {
-                    "Index OID": 53,
-                    "Cost": 15.741837448562467
-                },
-                {
-                    "Index OID": 54,
-                    "Cost": 61.955888677368705
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 12.664405421057623
-                },
-                {
-                    "Index OID": 62,
-                    "Cost": 87.83823562504882
-                },
-                {
-                    "Index OID": 66,
-                    "Cost": 44.102071839625786
-                },
-                {
-                    "Index OID": 67,
-                    "Cost": 97.28864260262563
-                },
-                {
-                    "Index OID": 72,
-                    "Cost": 25.446714306860564
+                    "Index OID": 74,
+                    "Cost": 19.75
                 },
                 {
                     "Index OID": 75,
-                    "Cost": 72.6560330918995
+                    "Cost": 61.66
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 63.34672044418867
+                    "Index OID": 92,
+                    "Cost": 93.62
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 20.11
                 }
             ]
         },
         {
             "Scan ID": "Scan 24",
-            "Sequential Scan Cost": 280.9214204161267,
+            "Sequential Scan Cost": 220.18,
             "Existing Index Costs": [
                 {
-                    "Index OID": 84,
-                    "Cost": 50.30332409727255
+                    "Index OID": 95,
+                    "Cost": 19.73
                 }
             ],
             "Possible Index Costs": [
                 {
-                    "Index OID": 3,
-                    "Cost": 84.43934832300947
+                    "Index OID": 1,
+                    "Cost": 83.87
                 },
                 {
-                    "Index OID": 9,
-                    "Cost": 98.7995932491939
+                    "Index OID": 16,
+                    "Cost": 74.28
                 },
                 {
-                    "Index OID": 28,
-                    "Cost": 80.55333339183471
+                    "Index OID": 18,
+                    "Cost": 57.74
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 48.33542206315863
+                    "Index OID": 29,
+                    "Cost": 11.15
                 },
                 {
-                    "Index OID": 33,
-                    "Cost": 59.42037102441789
+                    "Index OID": 31,
+                    "Cost": 10.54
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 72.65554984467092
+                    "Index OID": 36,
+                    "Cost": 30.18
                 },
                 {
-                    "Index OID": 63,
-                    "Cost": 23.884216175422512
+                    "Index OID": 37,
+                    "Cost": 50.68
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 74.93276878127521
+                    "Index OID": 41,
+                    "Cost": 21.64
                 },
                 {
-                    "Index OID": 75,
-                    "Cost": 14.022508470049164
+                    "Index OID": 47,
+                    "Cost": 79.26
+                },
+                {
+                    "Index OID": 64,
+                    "Cost": 46.47
+                },
+                {
+                    "Index OID": 66,
+                    "Cost": 88.39
+                },
+                {
+                    "Index OID": 68,
+                    "Cost": 41.13
+                },
+                {
+                    "Index OID": 70,
+                    "Cost": 19.22
+                },
+                {
+                    "Index OID": 72,
+                    "Cost": 71.75
+                },
+                {
+                    "Index OID": 76,
+                    "Cost": 47.8
                 },
                 {
                     "Index OID": 79,
-                    "Cost": 45.88648525156432
+                    "Cost": 46.92
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 64.31
                 }
             ]
         },
         {
             "Scan ID": "Scan 25",
-            "Sequential Scan Cost": 205.07392568611152,
+            "Sequential Scan Cost": 189.44,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 56.539481668087134
+                    "Index OID": 7,
+                    "Cost": 40.32
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 48.011729742590624
-                },
-                {
-                    "Index OID": 13,
-                    "Cost": 45.349910349287285
+                    "Index OID": 15,
+                    "Cost": 76.89
                 },
                 {
                     "Index OID": 17,
-                    "Cost": 98.70002789987868
+                    "Cost": 47.23
                 },
                 {
-                    "Index OID": 22,
-                    "Cost": 45.155051132997976
+                    "Index OID": 25,
+                    "Cost": 94.34
                 },
                 {
-                    "Index OID": 23,
-                    "Cost": 28.756530068896048
+                    "Index OID": 27,
+                    "Cost": 63.67
                 },
                 {
-                    "Index OID": 33,
-                    "Cost": 60.05429032598972
+                    "Index OID": 31,
+                    "Cost": 16.21
+                },
+                {
+                    "Index OID": 32,
+                    "Cost": 64.07
                 },
                 {
                     "Index OID": 35,
-                    "Cost": 23.212543612762918
+                    "Cost": 25.14
                 },
                 {
-                    "Index OID": 38,
-                    "Cost": 27.37309353083708
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 21.743024676590334
+                    "Index OID": 44,
+                    "Cost": 56.0
                 },
                 {
                     "Index OID": 52,
-                    "Cost": 35.90331868493738
+                    "Cost": 90.67
                 },
                 {
-                    "Index OID": 56,
-                    "Cost": 34.19439542422153
+                    "Index OID": 57,
+                    "Cost": 68.9
+                },
+                {
+                    "Index OID": 58,
+                    "Cost": 93.44
+                },
+                {
+                    "Index OID": 66,
+                    "Cost": 32.63
                 },
                 {
                     "Index OID": 69,
-                    "Cost": 17.37925119123635
+                    "Cost": 28.28
                 },
                 {
                     "Index OID": 74,
-                    "Cost": 25.66377146530609
+                    "Cost": 85.29
                 },
                 {
-                    "Index OID": 75,
-                    "Cost": 13.973321544657498
+                    "Index OID": 80,
+                    "Cost": 63.35
                 },
                 {
-                    "Index OID": 79,
-                    "Cost": 91.14554569038414
+                    "Index OID": 86,
+                    "Cost": 83.75
+                },
+                {
+                    "Index OID": 88,
+                    "Cost": 40.88
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 63.09
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 93.89
                 }
             ]
         },
         {
             "Scan ID": "Scan 26",
-            "Sequential Scan Cost": 226.60762613632772,
+            "Sequential Scan Cost": 187.05,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 68.0941552489492
+                    "Index OID": 15,
+                    "Cost": 68.44
                 },
                 {
-                    "Index OID": 3,
-                    "Cost": 39.11836068786976
+                    "Index OID": 18,
+                    "Cost": 40.81
                 },
                 {
-                    "Index OID": 6,
-                    "Cost": 21.437513455144767
+                    "Index OID": 22,
+                    "Cost": 98.54
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 92.75699238582972
+                    "Index OID": 23,
+                    "Cost": 95.92
                 },
                 {
-                    "Index OID": 20,
-                    "Cost": 39.15259236071613
+                    "Index OID": 25,
+                    "Cost": 91.69
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 30.17821849296114
+                    "Index OID": 31,
+                    "Cost": 59.66
+                },
+                {
+                    "Index OID": 37,
+                    "Cost": 43.0
+                },
+                {
+                    "Index OID": 39,
+                    "Cost": 75.36
                 },
                 {
                     "Index OID": 41,
-                    "Cost": 86.40157569422192
+                    "Cost": 59.46
                 },
                 {
-                    "Index OID": 47,
-                    "Cost": 57.791956021690105
+                    "Index OID": 49,
+                    "Cost": 28.18
                 },
                 {
-                    "Index OID": 48,
-                    "Cost": 54.1685008275986
+                    "Index OID": 51,
+                    "Cost": 76.84
                 },
                 {
                     "Index OID": 53,
-                    "Cost": 48.96128382105673
+                    "Cost": 61.79
                 },
                 {
-                    "Index OID": 58,
-                    "Cost": 56.933970963918114
-                },
-                {
-                    "Index OID": 63,
-                    "Cost": 61.98154790453764
+                    "Index OID": 57,
+                    "Cost": 17.07
                 },
                 {
                     "Index OID": 65,
-                    "Cost": 28.020644771103797
+                    "Cost": 79.24
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 37.97793547935726
+                    "Index OID": 66,
+                    "Cost": 34.99
                 },
                 {
-                    "Index OID": 73,
-                    "Cost": 54.53368481342922
+                    "Index OID": 70,
+                    "Cost": 78.77
+                },
+                {
+                    "Index OID": 71,
+                    "Cost": 84.17
                 },
                 {
                     "Index OID": 74,
-                    "Cost": 74.02482886023505
+                    "Cost": 68.47
                 },
                 {
-                    "Index OID": 77,
-                    "Cost": 78.9726816495444
+                    "Index OID": 88,
+                    "Cost": 99.67
                 },
                 {
-                    "Index OID": 82,
-                    "Cost": 44.85243045979173
+                    "Index OID": 89,
+                    "Cost": 36.23
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 18.11
                 }
             ]
         },
         {
             "Scan ID": "Scan 27",
-            "Sequential Scan Cost": 281.1057844559872,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 97.84192813044433
-                }
-            ],
+            "Sequential Scan Cost": 286.81,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 2,
-                    "Cost": 66.743992039147
+                    "Index OID": 4,
+                    "Cost": 83.37
                 },
                 {
-                    "Index OID": 3,
-                    "Cost": 46.55685704377677
+                    "Index OID": 12,
+                    "Cost": 70.93
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 59.86775139765211
+                    "Index OID": 17,
+                    "Cost": 99.78
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 56.526228476397414
+                    "Index OID": 22,
+                    "Cost": 73.65
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 57.985778447600424
+                    "Index OID": 23,
+                    "Cost": 74.69
                 },
                 {
                     "Index OID": 25,
-                    "Cost": 72.00425726417083
+                    "Cost": 63.0
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 91.18539098279734
+                    "Index OID": 27,
+                    "Cost": 32.69
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 86.89265569524358
+                    "Index OID": 39,
+                    "Cost": 36.27
                 },
                 {
-                    "Index OID": 56,
-                    "Cost": 89.71713068666966
+                    "Index OID": 43,
+                    "Cost": 79.23
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 74.09790945155082
+                    "Index OID": 47,
+                    "Cost": 43.44
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 30.521544904041164
+                    "Index OID": 52,
+                    "Cost": 71.58
                 },
                 {
-                    "Index OID": 74,
-                    "Cost": 88.8409289060297
+                    "Index OID": 53,
+                    "Cost": 54.93
                 },
                 {
-                    "Index OID": 75,
-                    "Cost": 14.299995437511555
+                    "Index OID": 66,
+                    "Cost": 49.24
                 },
                 {
-                    "Index OID": 80,
-                    "Cost": 10.255093061604505
+                    "Index OID": 78,
+                    "Cost": 45.47
+                },
+                {
+                    "Index OID": 85,
+                    "Cost": 35.73
+                },
+                {
+                    "Index OID": 87,
+                    "Cost": 76.29
+                },
+                {
+                    "Index OID": 92,
+                    "Cost": 64.42
                 }
             ]
         },
         {
             "Scan ID": "Scan 28",
-            "Sequential Scan Cost": 201.84119948700172,
-            "Existing Index Costs": [],
+            "Sequential Scan Cost": 250.38,
+            "Existing Index Costs": [
+                {
+                    "Index OID": 95,
+                    "Cost": 51.61
+                }
+            ],
             "Possible Index Costs": [
                 {
-                    "Index OID": 1,
-                    "Cost": 27.77131260843941
-                },
-                {
-                    "Index OID": 3,
-                    "Cost": 16.746558553420194
-                },
-                {
                     "Index OID": 9,
-                    "Cost": 59.196154421451865
+                    "Cost": 61.77
                 },
                 {
-                    "Index OID": 12,
-                    "Cost": 71.95137747342439
+                    "Index OID": 10,
+                    "Cost": 60.09
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 45.504462681587626
+                    "Index OID": 11,
+                    "Cost": 35.99
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 12.307229282762343
+                    "Index OID": 14,
+                    "Cost": 22.98
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 92.75938312436277
+                    "Index OID": 15,
+                    "Cost": 34.8
+                },
+                {
+                    "Index OID": 21,
+                    "Cost": 34.84
+                },
+                {
+                    "Index OID": 22,
+                    "Cost": 97.48
                 },
                 {
                     "Index OID": 33,
-                    "Cost": 23.490139614679762
+                    "Cost": 56.82
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 62.036267976517024
+                    "Index OID": 36,
+                    "Cost": 10.94
+                },
+                {
+                    "Index OID": 38,
+                    "Cost": 21.08
+                },
+                {
+                    "Index OID": 39,
+                    "Cost": 61.47
                 },
                 {
                     "Index OID": 43,
-                    "Cost": 64.76211742830962
+                    "Cost": 63.24
                 },
                 {
                     "Index OID": 44,
-                    "Cost": 33.26443370747726
+                    "Cost": 23.52
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 54.20468858407967
+                    "Index OID": 46,
+                    "Cost": 41.07
                 },
                 {
-                    "Index OID": 51,
-                    "Cost": 18.55495257461358
+                    "Index OID": 55,
+                    "Cost": 94.49
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 13.272101280026778
+                    "Index OID": 62,
+                    "Cost": 91.09
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 93.66095898520466
+                    "Index OID": 63,
+                    "Cost": 60.73
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 81.37036336889639
+                    "Index OID": 64,
+                    "Cost": 12.59
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 51.01479760763818
+                    "Index OID": 80,
+                    "Cost": 51.31
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 71.55436289535956
+                    "Index OID": 88,
+                    "Cost": 37.44
                 },
                 {
-                    "Index OID": 69,
-                    "Cost": 24.567734244591875
+                    "Index OID": 90,
+                    "Cost": 99.06
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 70.79046353642448
-                },
-                {
-                    "Index OID": 76,
-                    "Cost": 60.78839489490101
-                },
-                {
-                    "Index OID": 77,
-                    "Cost": 12.681058814749598
-                },
-                {
-                    "Index OID": 81,
-                    "Cost": 32.5892009348167
+                    "Index OID": 94,
+                    "Cost": 55.14
                 }
             ]
         },
         {
             "Scan ID": "Scan 29",
-            "Sequential Scan Cost": 177.14501372892101,
+            "Sequential Scan Cost": 240.58,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
                     "Index OID": 1,
-                    "Cost": 33.79163987223747
+                    "Cost": 97.83
                 },
                 {
-                    "Index OID": 11,
-                    "Cost": 91.63340205888895
+                    "Index OID": 2,
+                    "Cost": 31.47
                 },
                 {
-                    "Index OID": 19,
-                    "Cost": 77.49828339818288
+                    "Index OID": 6,
+                    "Cost": 41.63
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 78.78478777452506
+                    "Index OID": 10,
+                    "Cost": 33.63
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 10.208203188320903
+                    "Index OID": 16,
+                    "Cost": 97.81
                 },
                 {
-                    "Index OID": 35,
-                    "Cost": 45.5939849524924
+                    "Index OID": 17,
+                    "Cost": 61.24
                 },
                 {
-                    "Index OID": 44,
-                    "Cost": 21.764231369706543
+                    "Index OID": 23,
+                    "Cost": 97.08
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 22.84601507156586
+                    "Index OID": 24,
+                    "Cost": 89.03
                 },
                 {
-                    "Index OID": 51,
-                    "Cost": 55.452037531472406
+                    "Index OID": 28,
+                    "Cost": 60.53
                 },
                 {
-                    "Index OID": 63,
-                    "Cost": 67.70198316890307
+                    "Index OID": 30,
+                    "Cost": 38.11
                 },
                 {
-                    "Index OID": 69,
-                    "Cost": 94.73739924990065
+                    "Index OID": 33,
+                    "Cost": 17.09
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 41.8387778439288
+                    "Index OID": 37,
+                    "Cost": 75.36
+                },
+                {
+                    "Index OID": 43,
+                    "Cost": 35.22
+                },
+                {
+                    "Index OID": 46,
+                    "Cost": 78.65
+                },
+                {
+                    "Index OID": 47,
+                    "Cost": 90.89
                 },
                 {
                     "Index OID": 73,
-                    "Cost": 13.261678432333612
+                    "Cost": 44.97
                 },
                 {
-                    "Index OID": 77,
-                    "Cost": 22.974889087937175
+                    "Index OID": 76,
+                    "Cost": 65.54
                 },
                 {
-                    "Index OID": 80,
-                    "Cost": 25.531834165761513
+                    "Index OID": 81,
+                    "Cost": 41.32
                 }
             ]
         },
         {
             "Scan ID": "Scan 30",
-            "Sequential Scan Cost": 261.9648248447892,
+            "Sequential Scan Cost": 232.0,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 68.09922490067976
+                    "Index OID": 6,
+                    "Cost": 61.98
                 },
                 {
-                    "Index OID": 1,
-                    "Cost": 18.387970657988923
+                    "Index OID": 11,
+                    "Cost": 15.51
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 72.81696229737787
+                    "Index OID": 16,
+                    "Cost": 95.28
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 28.147152660384634
+                    "Index OID": 21,
+                    "Cost": 51.59
                 },
                 {
-                    "Index OID": 12,
-                    "Cost": 89.39112374604076
+                    "Index OID": 32,
+                    "Cost": 87.76
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 35.968391665907184
-                },
-                {
-                    "Index OID": 37,
-                    "Cost": 12.056196557508809
-                },
-                {
-                    "Index OID": 39,
-                    "Cost": 88.5171857196026
-                },
-                {
-                    "Index OID": 46,
-                    "Cost": 62.84565861207773
+                    "Index OID": 51,
+                    "Cost": 74.38
                 },
                 {
                     "Index OID": 52,
-                    "Cost": 60.68675218054196
+                    "Cost": 52.19
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 14.078461059377434
+                    "Index OID": 53,
+                    "Cost": 48.79
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 32.637516889633005
+                    "Index OID": 60,
+                    "Cost": 18.46
                 },
                 {
-                    "Index OID": 69,
-                    "Cost": 97.69359941845559
+                    "Index OID": 73,
+                    "Cost": 56.86
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 59.77178214570722
+                    "Index OID": 85,
+                    "Cost": 80.86
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 96.11680912085093
+                    "Index OID": 86,
+                    "Cost": 62.04
                 }
             ]
         },
         {
             "Scan ID": "Scan 31",
-            "Sequential Scan Cost": 173.29264870015837,
+            "Sequential Scan Cost": 250.3,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 2,
-                    "Cost": 96.57333717181102
+                    "Index OID": 1,
+                    "Cost": 82.28
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 64.0646788579708
+                    "Index OID": 4,
+                    "Cost": 63.65
                 },
                 {
-                    "Index OID": 17,
-                    "Cost": 22.078006838150486
+                    "Index OID": 7,
+                    "Cost": 38.58
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 62.81384801816116
+                    "Index OID": 11,
+                    "Cost": 48.01
+                },
+                {
+                    "Index OID": 16,
+                    "Cost": 43.67
+                },
+                {
+                    "Index OID": 18,
+                    "Cost": 64.36
+                },
+                {
+                    "Index OID": 22,
+                    "Cost": 26.68
                 },
                 {
                     "Index OID": 26,
-                    "Cost": 32.51735452676812
+                    "Cost": 61.16
+                },
+                {
+                    "Index OID": 27,
+                    "Cost": 11.97
                 },
                 {
                     "Index OID": 30,
-                    "Cost": 55.726866954781734
+                    "Cost": 67.42
                 },
                 {
-                    "Index OID": 39,
-                    "Cost": 23.86247864105961
+                    "Index OID": 33,
+                    "Cost": 82.76
                 },
                 {
-                    "Index OID": 40,
-                    "Cost": 62.74137290683207
+                    "Index OID": 36,
+                    "Cost": 44.27
                 },
                 {
-                    "Index OID": 59,
-                    "Cost": 88.07504655612895
+                    "Index OID": 41,
+                    "Cost": 80.66
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 92.58058711724242
+                    "Index OID": 43,
+                    "Cost": 52.4
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 32.57599201428109
+                    "Index OID": 56,
+                    "Cost": 40.24
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 93.98564654145922
+                    "Index OID": 77,
+                    "Cost": 56.88
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 68.69
                 }
             ]
         },
         {
             "Scan ID": "Scan 32",
-            "Sequential Scan Cost": 212.7466937769136,
+            "Sequential Scan Cost": 195.76,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 14,
-                    "Cost": 35.389649835832586
+                    "Index OID": 0,
+                    "Cost": 52.29
                 },
                 {
-                    "Index OID": 18,
-                    "Cost": 11.459089767249909
+                    "Index OID": 15,
+                    "Cost": 64.06
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 46.80778388252371
+                    "Index OID": 23,
+                    "Cost": 40.38
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 66.28878830829203
+                    "Index OID": 26,
+                    "Cost": 81.48
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 52.93006642196548
+                    "Index OID": 40,
+                    "Cost": 88.64
                 },
                 {
-                    "Index OID": 32,
-                    "Cost": 12.125912632000114
+                    "Index OID": 43,
+                    "Cost": 39.0
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 69.72019128350632
+                    "Index OID": 51,
+                    "Cost": 95.5
                 },
                 {
-                    "Index OID": 39,
-                    "Cost": 77.3233258324575
+                    "Index OID": 59,
+                    "Cost": 13.6
                 },
                 {
-                    "Index OID": 42,
-                    "Cost": 83.62618682244286
+                    "Index OID": 68,
+                    "Cost": 91.36
                 },
                 {
-                    "Index OID": 45,
-                    "Cost": 81.89059797560859
-                },
-                {
-                    "Index OID": 54,
-                    "Cost": 50.2697389266593
-                },
-                {
-                    "Index OID": 66,
-                    "Cost": 24.60718218786962
-                },
-                {
-                    "Index OID": 69,
-                    "Cost": 88.82924745887848
-                },
-                {
-                    "Index OID": 71,
-                    "Cost": 60.45834075433855
-                },
-                {
-                    "Index OID": 82,
-                    "Cost": 56.94625611439312
+                    "Index OID": 86,
+                    "Cost": 32.65
                 }
             ]
         },
         {
             "Scan ID": "Scan 33",
-            "Sequential Scan Cost": 177.8406365832089,
+            "Sequential Scan Cost": 225.56,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 3,
-                    "Cost": 64.26103432886269
+                    "Index OID": 13,
+                    "Cost": 61.84
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 49.8956012858361
+                    "Index OID": 16,
+                    "Cost": 21.1
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 78.22679410343952
-                },
-                {
-                    "Index OID": 12,
-                    "Cost": 52.954796629773824
-                },
-                {
-                    "Index OID": 19,
-                    "Cost": 52.42598709569938
+                    "Index OID": 20,
+                    "Cost": 75.04
                 },
                 {
                     "Index OID": 22,
-                    "Cost": 12.390326383576806
+                    "Cost": 87.23
+                },
+                {
+                    "Index OID": 23,
+                    "Cost": 43.74
+                },
+                {
+                    "Index OID": 24,
+                    "Cost": 96.92
                 },
                 {
                     "Index OID": 27,
-                    "Cost": 66.3725123854459
+                    "Cost": 70.75
                 },
                 {
-                    "Index OID": 28,
-                    "Cost": 18.304165043272523
+                    "Index OID": 30,
+                    "Cost": 25.95
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 58.082854511117795
-                },
-                {
-                    "Index OID": 32,
-                    "Cost": 97.14257904912542
-                },
-                {
-                    "Index OID": 38,
-                    "Cost": 85.5333215178639
+                    "Index OID": 35,
+                    "Cost": 63.71
                 },
                 {
                     "Index OID": 41,
-                    "Cost": 63.02052667030071
+                    "Cost": 72.4
                 },
                 {
-                    "Index OID": 44,
-                    "Cost": 46.01127005036915
+                    "Index OID": 43,
+                    "Cost": 11.9
                 },
                 {
                     "Index OID": 45,
-                    "Cost": 57.307221436573975
+                    "Cost": 58.75
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 22.692774173246455
+                    "Index OID": 50,
+                    "Cost": 64.02
+                },
+                {
+                    "Index OID": 54,
+                    "Cost": 70.96
                 },
                 {
                     "Index OID": 57,
-                    "Cost": 48.09711349712941
+                    "Cost": 43.77
+                },
+                {
+                    "Index OID": 59,
+                    "Cost": 50.05
+                },
+                {
+                    "Index OID": 60,
+                    "Cost": 31.89
+                },
+                {
+                    "Index OID": 61,
+                    "Cost": 29.13
+                },
+                {
+                    "Index OID": 66,
+                    "Cost": 51.99
+                },
+                {
+                    "Index OID": 68,
+                    "Cost": 41.06
+                },
+                {
+                    "Index OID": 80,
+                    "Cost": 27.38
+                },
+                {
+                    "Index OID": 81,
+                    "Cost": 28.74
+                },
+                {
+                    "Index OID": 83,
+                    "Cost": 56.35
+                },
+                {
+                    "Index OID": 84,
+                    "Cost": 83.06
+                },
+                {
+                    "Index OID": 88,
+                    "Cost": 55.74
                 }
             ]
         },
         {
             "Scan ID": "Scan 34",
-            "Sequential Scan Cost": 239.8274100281722,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 40.72465520818325
-                }
-            ],
+            "Sequential Scan Cost": 299.24,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 2,
-                    "Cost": 61.97154803922796
+                    "Index OID": 0,
+                    "Cost": 91.69
                 },
                 {
-                    "Index OID": 4,
-                    "Cost": 48.50936245170578
+                    "Index OID": 3,
+                    "Cost": 17.52
                 },
                 {
-                    "Index OID": 6,
-                    "Cost": 47.828796592594976
+                    "Index OID": 13,
+                    "Cost": 22.12
+                },
+                {
+                    "Index OID": 19,
+                    "Cost": 66.05
                 },
                 {
                     "Index OID": 20,
-                    "Cost": 45.40168303545846
+                    "Cost": 50.17
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 32.164815233208685
+                    "Index OID": 23,
+                    "Cost": 75.01
                 },
                 {
-                    "Index OID": 42,
-                    "Cost": 59.16418050706574
+                    "Index OID": 28,
+                    "Cost": 12.51
                 },
                 {
-                    "Index OID": 46,
-                    "Cost": 26.633074736283945
+                    "Index OID": 35,
+                    "Cost": 32.42
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 78.21972177183284
+                    "Index OID": 38,
+                    "Cost": 20.7
                 },
                 {
-                    "Index OID": 66,
-                    "Cost": 73.01838378625996
+                    "Index OID": 48,
+                    "Cost": 72.66
+                },
+                {
+                    "Index OID": 62,
+                    "Cost": 75.75
+                },
+                {
+                    "Index OID": 67,
+                    "Cost": 36.63
                 },
                 {
                     "Index OID": 72,
-                    "Cost": 53.93476671635476
+                    "Cost": 61.24
+                },
+                {
+                    "Index OID": 78,
+                    "Cost": 71.26
                 },
                 {
                     "Index OID": 79,
-                    "Cost": 50.00386595020522
+                    "Cost": 45.56
+                },
+                {
+                    "Index OID": 83,
+                    "Cost": 61.91
+                },
+                {
+                    "Index OID": 94,
+                    "Cost": 36.63
                 }
             ]
         },
         {
             "Scan ID": "Scan 35",
-            "Sequential Scan Cost": 235.76010001705092,
+            "Sequential Scan Cost": 234.78,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
+                    "Index OID": 9,
+                    "Cost": 53.7
+                },
+                {
                     "Index OID": 10,
-                    "Cost": 36.804671372590136
+                    "Cost": 60.95
                 },
                 {
-                    "Index OID": 13,
-                    "Cost": 97.47013892712415
+                    "Index OID": 15,
+                    "Cost": 79.54
                 },
                 {
-                    "Index OID": 16,
-                    "Cost": 99.73772228649501
+                    "Index OID": 17,
+                    "Cost": 83.2
                 },
                 {
                     "Index OID": 19,
-                    "Cost": 75.10590661384971
+                    "Cost": 83.02
                 },
                 {
-                    "Index OID": 24,
-                    "Cost": 82.45416807250746
+                    "Index OID": 23,
+                    "Cost": 12.82
                 },
                 {
-                    "Index OID": 45,
-                    "Cost": 30.83453496903078
+                    "Index OID": 26,
+                    "Cost": 11.49
                 },
                 {
-                    "Index OID": 51,
-                    "Cost": 39.2388320431257
+                    "Index OID": 29,
+                    "Cost": 42.76
+                },
+                {
+                    "Index OID": 31,
+                    "Cost": 64.85
+                },
+                {
+                    "Index OID": 32,
+                    "Cost": 20.1
+                },
+                {
+                    "Index OID": 36,
+                    "Cost": 90.74
                 },
                 {
                     "Index OID": 54,
-                    "Cost": 29.927995048904283
+                    "Cost": 85.8
                 },
                 {
-                    "Index OID": 59,
-                    "Cost": 20.148840950976478
+                    "Index OID": 57,
+                    "Cost": 45.98
+                },
+                {
+                    "Index OID": 62,
+                    "Cost": 94.27
                 },
                 {
                     "Index OID": 67,
-                    "Cost": 46.508039475183026
+                    "Cost": 37.68
                 },
                 {
-                    "Index OID": 73,
-                    "Cost": 28.442920215182916
+                    "Index OID": 70,
+                    "Cost": 20.07
                 },
                 {
-                    "Index OID": 74,
-                    "Cost": 16.826120635275053
+                    "Index OID": 72,
+                    "Cost": 46.63
+                },
+                {
+                    "Index OID": 77,
+                    "Cost": 12.64
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 78.85
+                },
+                {
+                    "Index OID": 85,
+                    "Cost": 98.74
+                },
+                {
+                    "Index OID": 87,
+                    "Cost": 23.23
+                },
+                {
+                    "Index OID": 89,
+                    "Cost": 37.61
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 64.15
                 }
             ]
         },
         {
             "Scan ID": "Scan 36",
-            "Sequential Scan Cost": 158.79524426163982,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 94.24901297839872
-                }
-            ],
+            "Sequential Scan Cost": 265.42,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 3,
-                    "Cost": 24.973703924645065
+                    "Index OID": 0,
+                    "Cost": 66.28
                 },
                 {
-                    "Index OID": 9,
-                    "Cost": 48.58514282755454
+                    "Index OID": 1,
+                    "Cost": 15.38
                 },
                 {
-                    "Index OID": 10,
-                    "Cost": 71.4433044765964
+                    "Index OID": 7,
+                    "Cost": 63.63
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 68.5843883480837
+                    "Index OID": 8,
+                    "Cost": 79.14
                 },
                 {
-                    "Index OID": 40,
-                    "Cost": 15.088573060211004
+                    "Index OID": 23,
+                    "Cost": 65.91
                 },
                 {
-                    "Index OID": 43,
-                    "Cost": 51.717149668918175
+                    "Index OID": 46,
+                    "Cost": 41.96
                 },
                 {
-                    "Index OID": 44,
-                    "Cost": 96.51711014467213
+                    "Index OID": 54,
+                    "Cost": 31.17
                 },
                 {
-                    "Index OID": 55,
-                    "Cost": 41.95326509918249
+                    "Index OID": 56,
+                    "Cost": 35.83
                 },
                 {
-                    "Index OID": 60,
-                    "Cost": 10.988190143762672
+                    "Index OID": 57,
+                    "Cost": 52.26
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 15.628383433441208
+                    "Index OID": 67,
+                    "Cost": 17.77
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 57.14402760746534
+                    "Index OID": 73,
+                    "Cost": 38.55
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 78.1163016138906
+                    "Index OID": 88,
+                    "Cost": 94.71
                 },
                 {
-                    "Index OID": 72,
-                    "Cost": 84.74468027671634
-                },
-                {
-                    "Index OID": 79,
-                    "Cost": 72.5376219966943
-                },
-                {
-                    "Index OID": 81,
-                    "Cost": 27.65455267325507
+                    "Index OID": 92,
+                    "Cost": 73.75
                 }
             ]
         },
         {
             "Scan ID": "Scan 37",
-            "Sequential Scan Cost": 250.6299120726328,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 63.76304257279697
-                }
-            ],
+            "Sequential Scan Cost": 187.32,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 15.273423007527468
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 84.76715600243506
-                },
-                {
-                    "Index OID": 9,
-                    "Cost": 41.45496059265059
-                },
-                {
-                    "Index OID": 11,
-                    "Cost": 58.60147589244119
-                },
-                {
-                    "Index OID": 17,
-                    "Cost": 77.73445332684463
-                },
-                {
                     "Index OID": 21,
-                    "Cost": 63.64680398312597
-                },
-                {
-                    "Index OID": 22,
-                    "Cost": 10.45994754105255
+                    "Cost": 57.22
                 },
                 {
                     "Index OID": 24,
-                    "Cost": 92.51829403558877
+                    "Cost": 23.22
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 32.33401427714992
+                    "Index OID": 28,
+                    "Cost": 33.31
                 },
                 {
                     "Index OID": 30,
-                    "Cost": 56.20609037475971
+                    "Cost": 83.98
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 96.39880203176473
+                    "Index OID": 32,
+                    "Cost": 83.86
                 },
                 {
-                    "Index OID": 46,
-                    "Cost": 71.2180726102657
+                    "Index OID": 38,
+                    "Cost": 22.94
                 },
                 {
-                    "Index OID": 52,
-                    "Cost": 81.8502289268954
+                    "Index OID": 47,
+                    "Cost": 54.31
                 },
                 {
-                    "Index OID": 53,
-                    "Cost": 21.371146164485417
+                    "Index OID": 49,
+                    "Cost": 44.9
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 37.851270337222175
+                    "Index OID": 58,
+                    "Cost": 62.16
+                },
+                {
+                    "Index OID": 59,
+                    "Cost": 85.03
                 },
                 {
                     "Index OID": 68,
-                    "Cost": 20.85348181510562
+                    "Cost": 48.68
                 },
                 {
-                    "Index OID": 80,
-                    "Cost": 61.26971468983065
+                    "Index OID": 75,
+                    "Cost": 81.64
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 69.68348684266947
+                    "Index OID": 79,
+                    "Cost": 92.36
+                },
+                {
+                    "Index OID": 82,
+                    "Cost": 54.25
+                },
+                {
+                    "Index OID": 86,
+                    "Cost": 44.19
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 70.74
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 24.91
                 }
             ]
         },
         {
             "Scan ID": "Scan 38",
-            "Sequential Scan Cost": 190.9874969063693,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 11.179653350604468
-                }
-            ],
+            "Sequential Scan Cost": 165.47,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
                     "Index OID": 4,
-                    "Cost": 13.786476243468394
+                    "Cost": 10.06
                 },
                 {
-                    "Index OID": 8,
-                    "Cost": 45.12831293100088
+                    "Index OID": 13,
+                    "Cost": 46.37
                 },
                 {
                     "Index OID": 14,
-                    "Cost": 95.69044031952753
+                    "Cost": 56.6
                 },
                 {
-                    "Index OID": 19,
-                    "Cost": 76.95773913975468
+                    "Index OID": 17,
+                    "Cost": 35.37
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 27.30029007605782
+                    "Index OID": 26,
+                    "Cost": 46.63
                 },
                 {
-                    "Index OID": 36,
-                    "Cost": 21.21802328487505
+                    "Index OID": 29,
+                    "Cost": 16.33
                 },
                 {
-                    "Index OID": 43,
-                    "Cost": 69.26478041321909
+                    "Index OID": 30,
+                    "Cost": 80.68
                 },
                 {
-                    "Index OID": 45,
-                    "Cost": 53.8575568090847
+                    "Index OID": 34,
+                    "Cost": 36.56
                 },
                 {
-                    "Index OID": 57,
-                    "Cost": 26.890873260626048
+                    "Index OID": 47,
+                    "Cost": 27.13
                 },
                 {
-                    "Index OID": 58,
-                    "Cost": 94.31769820454255
+                    "Index OID": 53,
+                    "Cost": 54.94
+                },
+                {
+                    "Index OID": 56,
+                    "Cost": 41.51
                 },
                 {
                     "Index OID": 60,
-                    "Cost": 83.34339332685369
+                    "Cost": 74.13
                 },
                 {
-                    "Index OID": 63,
-                    "Cost": 19.528736880312408
+                    "Index OID": 65,
+                    "Cost": 76.4
                 },
                 {
-                    "Index OID": 67,
-                    "Cost": 57.41968005053179
-                },
-                {
-                    "Index OID": 70,
-                    "Cost": 64.82411500437885
-                },
-                {
-                    "Index OID": 75,
-                    "Cost": 96.7686059884581
-                },
-                {
-                    "Index OID": 76,
-                    "Cost": 51.832494547852775
-                },
-                {
-                    "Index OID": 79,
-                    "Cost": 40.04337953579461
-                },
-                {
-                    "Index OID": 80,
-                    "Cost": 93.94132691819141
+                    "Index OID": 78,
+                    "Cost": 88.85
                 },
                 {
                     "Index OID": 82,
-                    "Cost": 11.063485937624819
+                    "Cost": 21.24
+                },
+                {
+                    "Index OID": 83,
+                    "Cost": 99.23
+                },
+                {
+                    "Index OID": 92,
+                    "Cost": 19.93
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 47.24
                 }
             ]
         },
         {
             "Scan ID": "Scan 39",
-            "Sequential Scan Cost": 228.32310205147644,
+            "Sequential Scan Cost": 188.3,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 2,
-                    "Cost": 12.65428675778434
+                    "Index OID": 5,
+                    "Cost": 23.18
                 },
                 {
-                    "Index OID": 4,
-                    "Cost": 38.825481301140556
+                    "Index OID": 14,
+                    "Cost": 44.36
                 },
                 {
-                    "Index OID": 7,
-                    "Cost": 19.622157395171612
+                    "Index OID": 18,
+                    "Cost": 27.08
+                },
+                {
+                    "Index OID": 19,
+                    "Cost": 99.27
+                },
+                {
+                    "Index OID": 21,
+                    "Cost": 85.78
                 },
                 {
                     "Index OID": 26,
-                    "Cost": 89.95175177321343
+                    "Cost": 50.48
                 },
                 {
-                    "Index OID": 27,
-                    "Cost": 54.318330141238086
+                    "Index OID": 34,
+                    "Cost": 85.61
                 },
                 {
-                    "Index OID": 29,
-                    "Cost": 55.198292416729196
-                },
-                {
-                    "Index OID": 36,
-                    "Cost": 68.49366624662574
-                },
-                {
-                    "Index OID": 44,
-                    "Cost": 69.21309059564194
+                    "Index OID": 45,
+                    "Cost": 24.93
                 },
                 {
                     "Index OID": 48,
-                    "Cost": 95.87495305132677
+                    "Cost": 63.51
                 },
                 {
                     "Index OID": 49,
-                    "Cost": 34.68117594837787
+                    "Cost": 40.67
                 },
                 {
-                    "Index OID": 65,
-                    "Cost": 97.88527988161073
+                    "Index OID": 63,
+                    "Cost": 83.1
                 },
                 {
-                    "Index OID": 69,
-                    "Cost": 85.18416200223625
+                    "Index OID": 66,
+                    "Cost": 74.36
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 17.017580710038494
+                    "Index OID": 78,
+                    "Cost": 71.33
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 43.82940927220859
+                    "Index OID": 88,
+                    "Cost": 41.19
                 }
             ]
         },
         {
             "Scan ID": "Scan 40",
-            "Sequential Scan Cost": 252.61904646786846,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 52.95734125308264
-                }
-            ],
+            "Sequential Scan Cost": 241.25,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 0,
-                    "Cost": 45.4431355452923
+                    "Index OID": 5,
+                    "Cost": 63.31
                 },
                 {
-                    "Index OID": 2,
-                    "Cost": 61.36163216860938
-                },
-                {
-                    "Index OID": 4,
-                    "Cost": 21.383045747191716
-                },
-                {
-                    "Index OID": 9,
-                    "Cost": 18.888253411455214
-                },
-                {
-                    "Index OID": 19,
-                    "Cost": 66.27653131357127
-                },
-                {
-                    "Index OID": 23,
-                    "Cost": 91.41679165974716
+                    "Index OID": 14,
+                    "Cost": 15.77
                 },
                 {
                     "Index OID": 27,
-                    "Cost": 38.84072290753449
+                    "Cost": 86.97
                 },
                 {
-                    "Index OID": 31,
-                    "Cost": 29.051607845162362
+                    "Index OID": 36,
+                    "Cost": 89.96
                 },
                 {
-                    "Index OID": 42,
-                    "Cost": 75.74189855829012
+                    "Index OID": 38,
+                    "Cost": 90.23
                 },
                 {
-                    "Index OID": 48,
-                    "Cost": 36.4220993097441
+                    "Index OID": 41,
+                    "Cost": 52.73
                 },
                 {
-                    "Index OID": 49,
-                    "Cost": 56.433926919293455
+                    "Index OID": 61,
+                    "Cost": 12.36
                 },
                 {
-                    "Index OID": 66,
-                    "Cost": 78.57540087434977
+                    "Index OID": 67,
+                    "Cost": 36.38
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 57.05712481951465
+                    "Index OID": 76,
+                    "Cost": 13.03
                 },
                 {
-                    "Index OID": 77,
-                    "Cost": 83.51067498863885
+                    "Index OID": 92,
+                    "Cost": 89.09
+                },
+                {
+                    "Index OID": 93,
+                    "Cost": 63.38
                 }
             ]
         },
         {
             "Scan ID": "Scan 41",
-            "Sequential Scan Cost": 220.4838413029956,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 84,
-                    "Cost": 75.1157193568004
-                }
-            ],
+            "Sequential Scan Cost": 236.17,
+            "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
-                    "Index OID": 4,
-                    "Cost": 68.09856796928077
+                    "Index OID": 0,
+                    "Cost": 48.5
                 },
                 {
-                    "Index OID": 19,
-                    "Cost": 32.367378007984456
+                    "Index OID": 10,
+                    "Cost": 80.74
                 },
                 {
-                    "Index OID": 25,
-                    "Cost": 69.37621404466279
+                    "Index OID": 27,
+                    "Cost": 90.27
                 },
                 {
-                    "Index OID": 30,
-                    "Cost": 91.68903711899408
+                    "Index OID": 29,
+                    "Cost": 43.67
                 },
                 {
-                    "Index OID": 35,
-                    "Cost": 94.37661751630193
+                    "Index OID": 34,
+                    "Cost": 78.03
                 },
                 {
-                    "Index OID": 36,
-                    "Cost": 69.04029004254085
+                    "Index OID": 37,
+                    "Cost": 27.17
                 },
                 {
-                    "Index OID": 40,
-                    "Cost": 22.650479362476105
+                    "Index OID": 38,
+                    "Cost": 70.4
+                },
+                {
+                    "Index OID": 41,
+                    "Cost": 37.14
                 },
                 {
                     "Index OID": 44,
-                    "Cost": 16.425913743085232
+                    "Cost": 30.19
                 },
                 {
                     "Index OID": 45,
-                    "Cost": 62.38365317986716
+                    "Cost": 42.29
                 },
                 {
                     "Index OID": 48,
-                    "Cost": 14.908467745484943
+                    "Cost": 18.5
                 },
                 {
                     "Index OID": 54,
-                    "Cost": 90.06623126092408
-                },
-                {
-                    "Index OID": 55,
-                    "Cost": 34.550262379371944
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 13.111534482837296
-                },
-                {
-                    "Index OID": 66,
-                    "Cost": 24.177792754324734
+                    "Cost": 86.65
                 },
                 {
                     "Index OID": 68,
-                    "Cost": 18.310792900263092
+                    "Cost": 56.12
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 93.23276913754856
-                },
-                {
-                    "Index OID": 77,
-                    "Cost": 78.87133518975313
+                    "Index OID": 71,
+                    "Cost": 46.45
                 }
             ]
         },
         {
             "Scan ID": "Scan 42",
-            "Sequential Scan Cost": 191.54838528123628,
-            "Existing Index Costs": [],
+            "Sequential Scan Cost": 185.35,
+            "Existing Index Costs": [
+                {
+                    "Index OID": 95,
+                    "Cost": 67.57
+                }
+            ],
             "Possible Index Costs": [
                 {
+                    "Index OID": 6,
+                    "Cost": 38.9
+                },
+                {
+                    "Index OID": 10,
+                    "Cost": 25.8
+                },
+                {
                     "Index OID": 12,
-                    "Cost": 42.40778352943708
+                    "Cost": 45.35
                 },
                 {
-                    "Index OID": 13,
-                    "Cost": 36.46494538632415
+                    "Index OID": 19,
+                    "Cost": 37.36
                 },
                 {
-                    "Index OID": 15,
-                    "Cost": 85.02335456320412
-                },
-                {
-                    "Index OID": 18,
-                    "Cost": 27.145290431515598
-                },
-                {
-                    "Index OID": 20,
-                    "Cost": 70.08538644097848
-                },
-                {
-                    "Index OID": 23,
-                    "Cost": 75.36952959455242
-                },
-                {
-                    "Index OID": 26,
-                    "Cost": 96.48444739962622
+                    "Index OID": 21,
+                    "Cost": 22.47
                 },
                 {
                     "Index OID": 28,
-                    "Cost": 56.812919459202014
+                    "Cost": 96.59
                 },
                 {
                     "Index OID": 31,
-                    "Cost": 61.684119249456685
+                    "Cost": 72.97
                 },
                 {
-                    "Index OID": 35,
-                    "Cost": 63.14124984745506
+                    "Index OID": 33,
+                    "Cost": 49.68
                 },
                 {
-                    "Index OID": 36,
-                    "Cost": 71.43069740383932
+                    "Index OID": 34,
+                    "Cost": 77.36
+                },
+                {
+                    "Index OID": 45,
+                    "Cost": 63.1
+                },
+                {
+                    "Index OID": 46,
+                    "Cost": 19.81
                 },
                 {
                     "Index OID": 53,
-                    "Cost": 65.34523271677102
+                    "Cost": 42.88
                 },
                 {
-                    "Index OID": 59,
-                    "Cost": 55.09068775703999
+                    "Index OID": 55,
+                    "Cost": 42.9
                 },
                 {
-                    "Index OID": 61,
-                    "Cost": 16.042338333190777
+                    "Index OID": 57,
+                    "Cost": 16.01
                 },
                 {
-                    "Index OID": 62,
-                    "Cost": 71.3268766129692
+                    "Index OID": 64,
+                    "Cost": 84.51
                 },
                 {
-                    "Index OID": 68,
-                    "Cost": 51.3844164416225
+                    "Index OID": 72,
+                    "Cost": 48.3
                 },
                 {
-                    "Index OID": 70,
-                    "Cost": 88.32575016666716
+                    "Index OID": 73,
+                    "Cost": 21.38
                 },
                 {
-                    "Index OID": 71,
-                    "Cost": 84.09013911299928
+                    "Index OID": 74,
+                    "Cost": 81.64
                 },
                 {
-                    "Index OID": 76,
-                    "Cost": 89.43416662055718
+                    "Index OID": 75,
+                    "Cost": 60.62
                 },
                 {
                     "Index OID": 77,
-                    "Cost": 51.73366882616101
+                    "Cost": 75.6
                 },
                 {
-                    "Index OID": 81,
-                    "Cost": 41.54218358485715
+                    "Index OID": 78,
+                    "Cost": 24.78
+                },
+                {
+                    "Index OID": 79,
+                    "Cost": 12.75
+                },
+                {
+                    "Index OID": 84,
+                    "Cost": 87.29
+                },
+                {
+                    "Index OID": 91,
+                    "Cost": 88.21
                 }
             ]
         },
         {
             "Scan ID": "Scan 43",
-            "Sequential Scan Cost": 169.10423878391163,
+            "Sequential Scan Cost": 255.51,
             "Existing Index Costs": [],
             "Possible Index Costs": [
                 {
                     "Index OID": 2,
-                    "Cost": 14.290148118961783
+                    "Cost": 89.81
                 },
                 {
-                    "Index OID": 9,
-                    "Cost": 18.878458015560888
-                },
-                {
-                    "Index OID": 18,
-                    "Cost": 37.64133523199189
-                },
-                {
-                    "Index OID": 21,
-                    "Cost": 93.97261973761061
-                },
-                {
-                    "Index OID": 23,
-                    "Cost": 99.69426078969859
-                },
-                {
-                    "Index OID": 32,
-                    "Cost": 11.010960057157115
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 28.640113427141262
-                },
-                {
-                    "Index OID": 42,
-                    "Cost": 79.42742542132396
-                },
-                {
-                    "Index OID": 44,
-                    "Cost": 14.262304537620913
-                },
-                {
-                    "Index OID": 50,
-                    "Cost": 46.387399185588556
-                },
-                {
-                    "Index OID": 51,
-                    "Cost": 66.81802900676146
-                },
-                {
-                    "Index OID": 53,
-                    "Cost": 98.3080014161831
-                },
-                {
-                    "Index OID": 55,
-                    "Cost": 62.660170310355184
-                },
-                {
-                    "Index OID": 56,
-                    "Cost": 83.86290201153632
-                },
-                {
-                    "Index OID": 58,
-                    "Cost": 92.47386576977013
-                },
-                {
-                    "Index OID": 64,
-                    "Cost": 22.726296476777225
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 44",
-            "Sequential Scan Cost": 280.6157838651402,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 1,
-                    "Cost": 48.1133875056658
-                },
-                {
-                    "Index OID": 5,
-                    "Cost": 62.49749183709274
-                },
-                {
-                    "Index OID": 14,
-                    "Cost": 15.270326115238696
-                },
-                {
-                    "Index OID": 18,
-                    "Cost": 61.066385569373
-                },
-                {
-                    "Index OID": 27,
-                    "Cost": 65.35991504878422
-                },
-                {
-                    "Index OID": 34,
-                    "Cost": 95.35427035932605
-                },
-                {
-                    "Index OID": 38,
-                    "Cost": 36.6715079026893
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 78.7976548448448
-                },
-                {
-                    "Index OID": 42,
-                    "Cost": 97.03900577394406
-                },
-                {
-                    "Index OID": 48,
-                    "Cost": 96.2311357973839
-                },
-                {
-                    "Index OID": 52,
-                    "Cost": 49.39904167384265
-                },
-                {
-                    "Index OID": 57,
-                    "Cost": 30.57802578665778
-                },
-                {
-                    "Index OID": 60,
-                    "Cost": 10.21544941328032
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 74.74629424193805
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 45",
-            "Sequential Scan Cost": 293.03006724638203,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 0,
-                    "Cost": 43.390334493908504
-                },
-                {
-                    "Index OID": 7,
-                    "Cost": 20.575212670915825
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 72.64235705507362
-                },
-                {
-                    "Index OID": 29,
-                    "Cost": 24.434257311734648
-                },
-                {
-                    "Index OID": 30,
-                    "Cost": 14.118684670936116
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 81.227329384813
-                },
-                {
-                    "Index OID": 42,
-                    "Cost": 79.18139202724774
-                },
-                {
-                    "Index OID": 44,
-                    "Cost": 77.9638895443983
-                },
-                {
-                    "Index OID": 57,
-                    "Cost": 30.50277480705081
-                },
-                {
-                    "Index OID": 65,
-                    "Cost": 22.271387425900254
-                },
-                {
-                    "Index OID": 70,
-                    "Cost": 11.993289729402507
-                },
-                {
-                    "Index OID": 75,
-                    "Cost": 79.51002509641876
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 46",
-            "Sequential Scan Cost": 254.4184890512144,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 3,
-                    "Cost": 63.604193256887754
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 48.285349261613156
-                },
-                {
-                    "Index OID": 15,
-                    "Cost": 32.82016885441382
-                },
-                {
-                    "Index OID": 20,
-                    "Cost": 59.928823161509996
-                },
-                {
-                    "Index OID": 22,
-                    "Cost": 55.66588782168072
-                },
-                {
-                    "Index OID": 23,
-                    "Cost": 55.46299289230383
-                },
-                {
-                    "Index OID": 30,
-                    "Cost": 32.33974768828102
-                },
-                {
-                    "Index OID": 43,
-                    "Cost": 12.515120027320592
-                },
-                {
-                    "Index OID": 52,
-                    "Cost": 19.869249870739942
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 39.35343740453721
-                },
-                {
-                    "Index OID": 67,
-                    "Cost": 91.03441040179838
-                },
-                {
-                    "Index OID": 79,
-                    "Cost": 87.60158803030004
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 47",
-            "Sequential Scan Cost": 264.6562320753475,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 5,
-                    "Cost": 87.77497469456803
-                },
-                {
-                    "Index OID": 7,
-                    "Cost": 92.91566506156339
-                },
-                {
-                    "Index OID": 10,
-                    "Cost": 14.431955535866043
-                },
-                {
-                    "Index OID": 14,
-                    "Cost": 27.721118747988697
+                    "Index OID": 12,
+                    "Cost": 45.23
                 },
                 {
                     "Index OID": 19,
-                    "Cost": 75.82270900278728
-                },
-                {
-                    "Index OID": 20,
-                    "Cost": 72.74419592336704
-                },
-                {
-                    "Index OID": 26,
-                    "Cost": 55.2022862943531
-                },
-                {
-                    "Index OID": 33,
-                    "Cost": 20.45593149112493
-                },
-                {
-                    "Index OID": 38,
-                    "Cost": 57.64796733789005
-                },
-                {
-                    "Index OID": 48,
-                    "Cost": 92.14291523894805
-                },
-                {
-                    "Index OID": 60,
-                    "Cost": 67.93075272719328
-                },
-                {
-                    "Index OID": 64,
-                    "Cost": 21.875873910609606
-                },
-                {
-                    "Index OID": 65,
-                    "Cost": 85.51284947320278
-                },
-                {
-                    "Index OID": 73,
-                    "Cost": 77.40344890090832
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 48",
-            "Sequential Scan Cost": 255.1245442349031,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 70.3581790128312
-                }
-            ],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 3,
-                    "Cost": 38.67849709207802
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 27.761939485559978
-                },
-                {
-                    "Index OID": 13,
-                    "Cost": 52.76236708916269
-                },
-                {
-                    "Index OID": 15,
-                    "Cost": 81.11836644624897
-                },
-                {
-                    "Index OID": 25,
-                    "Cost": 57.20532557445897
-                },
-                {
-                    "Index OID": 43,
-                    "Cost": 76.53763263439612
-                },
-                {
-                    "Index OID": 44,
-                    "Cost": 53.92857718342523
-                },
-                {
-                    "Index OID": 50,
-                    "Cost": 21.014553956403212
-                },
-                {
-                    "Index OID": 57,
-                    "Cost": 95.75407456317649
-                },
-                {
-                    "Index OID": 67,
-                    "Cost": 18.80105549940231
-                },
-                {
-                    "Index OID": 69,
-                    "Cost": 33.6518872030625
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 49",
-            "Sequential Scan Cost": 181.3395729171937,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 3,
-                    "Cost": 97.25388568825113
-                },
-                {
-                    "Index OID": 8,
-                    "Cost": 17.638968744588468
-                },
-                {
-                    "Index OID": 9,
-                    "Cost": 20.539944005217656
-                },
-                {
-                    "Index OID": 11,
-                    "Cost": 61.67952341539043
+                    "Cost": 74.19
                 },
                 {
                     "Index OID": 27,
-                    "Cost": 14.085202291190551
+                    "Cost": 69.36
                 },
                 {
                     "Index OID": 28,
-                    "Cost": 56.62172205972246
-                },
-                {
-                    "Index OID": 29,
-                    "Cost": 34.876461011049
-                },
-                {
-                    "Index OID": 32,
-                    "Cost": 43.94013058822429
-                },
-                {
-                    "Index OID": 34,
-                    "Cost": 72.08997090757143
-                },
-                {
-                    "Index OID": 39,
-                    "Cost": 97.84451131358591
+                    "Cost": 92.47
                 },
                 {
                     "Index OID": 40,
-                    "Cost": 96.94758621262889
+                    "Cost": 72.04
                 },
                 {
-                    "Index OID": 41,
-                    "Cost": 48.798164605633794
-                },
-                {
-                    "Index OID": 42,
-                    "Cost": 89.88492048859374
-                },
-                {
-                    "Index OID": 47,
-                    "Cost": 48.422508944736215
-                },
-                {
-                    "Index OID": 66,
-                    "Cost": 68.0086836779785
-                },
-                {
-                    "Index OID": 75,
-                    "Cost": 29.913607768699425
-                },
-                {
-                    "Index OID": 78,
-                    "Cost": 77.70512494054185
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 50",
-            "Sequential Scan Cost": 276.80863028387677,
-            "Existing Index Costs": [],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 4,
-                    "Cost": 93.55906091434363
-                },
-                {
-                    "Index OID": 6,
-                    "Cost": 87.28866684505738
-                },
-                {
-                    "Index OID": 14,
-                    "Cost": 62.795369164048616
-                },
-                {
-                    "Index OID": 16,
-                    "Cost": 87.74141433549276
-                },
-                {
-                    "Index OID": 18,
-                    "Cost": 96.88748193769482
-                },
-                {
-                    "Index OID": 19,
-                    "Cost": 28.949887630605435
-                },
-                {
-                    "Index OID": 20,
-                    "Cost": 94.54527861103618
-                },
-                {
-                    "Index OID": 21,
-                    "Cost": 92.04031709510745
-                },
-                {
-                    "Index OID": 32,
-                    "Cost": 30.645978067853566
-                },
-                {
-                    "Index OID": 37,
-                    "Cost": 37.18504770491138
-                },
-                {
-                    "Index OID": 41,
-                    "Cost": 98.13051238641981
+                    "Index OID": 43,
+                    "Cost": 41.42
                 },
                 {
                     "Index OID": 45,
-                    "Cost": 26.748439264268935
+                    "Cost": 20.42
                 },
                 {
-                    "Index OID": 50,
-                    "Cost": 61.06670546465477
+                    "Index OID": 46,
+                    "Cost": 46.29
                 },
                 {
-                    "Index OID": 51,
-                    "Cost": 72.68203186177163
-                },
-                {
-                    "Index OID": 59,
-                    "Cost": 33.51268085194314
+                    "Index OID": 58,
+                    "Cost": 88.87
                 },
                 {
                     "Index OID": 68,
-                    "Cost": 62.04880558693326
-                },
-                {
-                    "Index OID": 70,
-                    "Cost": 45.31560984780993
+                    "Cost": 87.22
                 },
                 {
                     "Index OID": 71,
-                    "Cost": 63.59125497089362
-                }
-            ]
-        },
-        {
-            "Scan ID": "Scan 51",
-            "Sequential Scan Cost": 151.716014673968,
-            "Existing Index Costs": [
-                {
-                    "Index OID": 83,
-                    "Cost": 16.86463122975099
-                }
-            ],
-            "Possible Index Costs": [
-                {
-                    "Index OID": 2,
-                    "Cost": 64.22060334811512
+                    "Cost": 43.16
                 },
                 {
-                    "Index OID": 15,
-                    "Cost": 15.264014807595043
+                    "Index OID": 72,
+                    "Cost": 66.22
                 },
                 {
-                    "Index OID": 16,
-                    "Cost": 30.513416339513945
+                    "Index OID": 77,
+                    "Cost": 79.82
                 },
                 {
-                    "Index OID": 26,
-                    "Cost": 35.810073298877754
+                    "Index OID": 81,
+                    "Cost": 76.52
                 },
                 {
-                    "Index OID": 28,
-                    "Cost": 61.25396415575711
+                    "Index OID": 84,
+                    "Cost": 39.9
                 },
                 {
-                    "Index OID": 34,
-                    "Cost": 82.61610187978717
+                    "Index OID": 85,
+                    "Cost": 29.2
                 },
                 {
-                    "Index OID": 37,
-                    "Cost": 26.3055392307663
-                },
-                {
-                    "Index OID": 39,
-                    "Cost": 96.07224848706134
-                },
-                {
-                    "Index OID": 45,
-                    "Cost": 35.97440215261164
-                },
-                {
-                    "Index OID": 48,
-                    "Cost": 35.655032395228986
-                },
-                {
-                    "Index OID": 53,
-                    "Cost": 92.9040464699771
-                },
-                {
-                    "Index OID": 54,
-                    "Cost": 93.41149759120478
-                },
-                {
-                    "Index OID": 57,
-                    "Cost": 62.80381364577885
-                },
-                {
-                    "Index OID": 61,
-                    "Cost": 56.65935222758441
-                },
-                {
-                    "Index OID": 74,
-                    "Cost": 15.886137360734148
-                },
-                {
-                    "Index OID": 75,
-                    "Cost": 71.28981677638818
-                },
-                {
-                    "Index OID": 79,
-                    "Cost": 23.75576526028202
-                },
-                {
-                    "Index OID": 80,
-                    "Cost": 53.99117838976871
+                    "Index OID": 91,
+                    "Cost": 19.32
                 }
             ]
         }
@@ -3521,15 +3226,9 @@
     "Existing Indexes": [
         {
             "Index": {
-                "Index OID": 83
+                "Index OID": 95
             },
-            "Index Write Overhead": 0.16731070635716422
-        },
-        {
-            "Index": {
-                "Index OID": 84
-            },
-            "Index Write Overhead": 0.36838278446932604
+            "Index Write Overhead": 0.25
         }
     ],
     "Possible Indexes": [
@@ -3537,499 +3236,571 @@
             "Index": {
                 "Index OID": 0
             },
-            "Index Write Overhead": 0.2860816112705883
+            "Index Write Overhead": 0.59
         },
         {
             "Index": {
                 "Index OID": 1
             },
-            "Index Write Overhead": 0.3518630357556565
+            "Index Write Overhead": 0.75
         },
         {
             "Index": {
                 "Index OID": 2
             },
-            "Index Write Overhead": 0.2284823527368427
+            "Index Write Overhead": 0.24
         },
         {
             "Index": {
                 "Index OID": 3
             },
-            "Index Write Overhead": 0.3110689167691608
+            "Index Write Overhead": 0.28
         },
         {
             "Index": {
                 "Index OID": 4
             },
-            "Index Write Overhead": 0.4652975786146911
+            "Index Write Overhead": 0.26
         },
         {
             "Index": {
                 "Index OID": 5
             },
-            "Index Write Overhead": 0.2401835275956029
+            "Index Write Overhead": 0.82
         },
         {
             "Index": {
                 "Index OID": 6
             },
-            "Index Write Overhead": 0.3495001281117639
+            "Index Write Overhead": 0.13
         },
         {
             "Index": {
                 "Index OID": 7
             },
-            "Index Write Overhead": 0.40129153921155003
+            "Index Write Overhead": 0.88
         },
         {
             "Index": {
                 "Index OID": 8
             },
-            "Index Write Overhead": 0.35802638061904024
+            "Index Write Overhead": 0.53
         },
         {
             "Index": {
                 "Index OID": 9
             },
-            "Index Write Overhead": 0.1494781002030413
+            "Index Write Overhead": 0.92
         },
         {
             "Index": {
                 "Index OID": 10
             },
-            "Index Write Overhead": 0.19203540707602837
+            "Index Write Overhead": 0.04
         },
         {
             "Index": {
                 "Index OID": 11
             },
-            "Index Write Overhead": 0.38862425421058033
+            "Index Write Overhead": 0.66
         },
         {
             "Index": {
                 "Index OID": 12
             },
-            "Index Write Overhead": 0.3876616993286902
+            "Index Write Overhead": 0.46
         },
         {
             "Index": {
                 "Index OID": 13
             },
-            "Index Write Overhead": 0.3460834757754291
+            "Index Write Overhead": 0.2
         },
         {
             "Index": {
                 "Index OID": 14
             },
-            "Index Write Overhead": 0.1368644751847568
+            "Index Write Overhead": 0.78
         },
         {
             "Index": {
                 "Index OID": 15
             },
-            "Index Write Overhead": 0.43741637452747684
+            "Index Write Overhead": 0.05
         },
         {
             "Index": {
                 "Index OID": 16
             },
-            "Index Write Overhead": 0.37369499562737973
+            "Index Write Overhead": 1.0
         },
         {
             "Index": {
                 "Index OID": 17
             },
-            "Index Write Overhead": 0.22550453122797817
+            "Index Write Overhead": 0.87
         },
         {
             "Index": {
                 "Index OID": 18
             },
-            "Index Write Overhead": 0.33021787207590525
+            "Index Write Overhead": 0.21
         },
         {
             "Index": {
                 "Index OID": 19
             },
-            "Index Write Overhead": 0.25680602944056563
+            "Index Write Overhead": 0.62
         },
         {
             "Index": {
                 "Index OID": 20
             },
-            "Index Write Overhead": 0.38054730788542745
+            "Index Write Overhead": 0.05
         },
         {
             "Index": {
                 "Index OID": 21
             },
-            "Index Write Overhead": 0.207001700785893
+            "Index Write Overhead": 0.63
         },
         {
             "Index": {
                 "Index OID": 22
             },
-            "Index Write Overhead": 0.17028764632988724
+            "Index Write Overhead": 0.46
         },
         {
             "Index": {
                 "Index OID": 23
             },
-            "Index Write Overhead": 0.3187712148430082
+            "Index Write Overhead": 0.9
         },
         {
             "Index": {
                 "Index OID": 24
             },
-            "Index Write Overhead": 0.3784737668601178
+            "Index Write Overhead": 0.43
         },
         {
             "Index": {
                 "Index OID": 25
             },
-            "Index Write Overhead": 0.1443826197628485
+            "Index Write Overhead": 0.68
         },
         {
             "Index": {
                 "Index OID": 26
             },
-            "Index Write Overhead": 0.46721528858170414
+            "Index Write Overhead": 0.12
         },
         {
             "Index": {
                 "Index OID": 27
             },
-            "Index Write Overhead": 0.19359122291979758
+            "Index Write Overhead": 0.94
         },
         {
             "Index": {
                 "Index OID": 28
             },
-            "Index Write Overhead": 0.16911844807862844
+            "Index Write Overhead": 0.32
         },
         {
             "Index": {
                 "Index OID": 29
             },
-            "Index Write Overhead": 0.3277107334637837
+            "Index Write Overhead": 0.48
         },
         {
             "Index": {
                 "Index OID": 30
             },
-            "Index Write Overhead": 0.24252690553012557
+            "Index Write Overhead": 0.12
         },
         {
             "Index": {
                 "Index OID": 31
             },
-            "Index Write Overhead": 0.4502601834227058
+            "Index Write Overhead": 0.33
         },
         {
             "Index": {
                 "Index OID": 32
             },
-            "Index Write Overhead": 0.3630189450863125
+            "Index Write Overhead": 0.2
         },
         {
             "Index": {
                 "Index OID": 33
             },
-            "Index Write Overhead": 0.24176965951670623
+            "Index Write Overhead": 0.46
         },
         {
             "Index": {
                 "Index OID": 34
             },
-            "Index Write Overhead": 0.16569104948355606
+            "Index Write Overhead": 0.83
         },
         {
             "Index": {
                 "Index OID": 35
             },
-            "Index Write Overhead": 0.18767863628263615
+            "Index Write Overhead": 0.63
         },
         {
             "Index": {
                 "Index OID": 36
             },
-            "Index Write Overhead": 0.15917436093407367
+            "Index Write Overhead": 0.42
         },
         {
             "Index": {
                 "Index OID": 37
             },
-            "Index Write Overhead": 0.2860655928837995
+            "Index Write Overhead": 0.97
         },
         {
             "Index": {
                 "Index OID": 38
             },
-            "Index Write Overhead": 0.2945155930660359
+            "Index Write Overhead": 0.44
         },
         {
             "Index": {
                 "Index OID": 39
             },
-            "Index Write Overhead": 0.18611902956583323
+            "Index Write Overhead": 0.56
         },
         {
             "Index": {
                 "Index OID": 40
             },
-            "Index Write Overhead": 0.47722436678520785
+            "Index Write Overhead": 0.68
         },
         {
             "Index": {
                 "Index OID": 41
             },
-            "Index Write Overhead": 0.2793275569998175
+            "Index Write Overhead": 0.24
         },
         {
             "Index": {
                 "Index OID": 42
             },
-            "Index Write Overhead": 0.2244904197773718
+            "Index Write Overhead": 0.87
         },
         {
             "Index": {
                 "Index OID": 43
             },
-            "Index Write Overhead": 0.11280877668573148
+            "Index Write Overhead": 0.39
         },
         {
             "Index": {
                 "Index OID": 44
             },
-            "Index Write Overhead": 0.1696530131552783
+            "Index Write Overhead": 0.14
         },
         {
             "Index": {
                 "Index OID": 45
             },
-            "Index Write Overhead": 0.4833290949873006
+            "Index Write Overhead": 0.9
         },
         {
             "Index": {
                 "Index OID": 46
             },
-            "Index Write Overhead": 0.2651552076369601
+            "Index Write Overhead": 0.23
         },
         {
             "Index": {
                 "Index OID": 47
             },
-            "Index Write Overhead": 0.28739006152521906
+            "Index Write Overhead": 0.07
         },
         {
             "Index": {
                 "Index OID": 48
             },
-            "Index Write Overhead": 0.35485743574892437
+            "Index Write Overhead": 0.55
         },
         {
             "Index": {
                 "Index OID": 49
             },
-            "Index Write Overhead": 0.43291186782826974
+            "Index Write Overhead": 0.16
         },
         {
             "Index": {
                 "Index OID": 50
             },
-            "Index Write Overhead": 0.20160865069393497
+            "Index Write Overhead": 0.68
         },
         {
             "Index": {
                 "Index OID": 51
             },
-            "Index Write Overhead": 0.14505807934059384
+            "Index Write Overhead": 0.15
         },
         {
             "Index": {
                 "Index OID": 52
             },
-            "Index Write Overhead": 0.26961634726470535
+            "Index Write Overhead": 0.97
         },
         {
             "Index": {
                 "Index OID": 53
             },
-            "Index Write Overhead": 0.21303994971831416
+            "Index Write Overhead": 0.08
         },
         {
             "Index": {
                 "Index OID": 54
             },
-            "Index Write Overhead": 0.14310807098875614
+            "Index Write Overhead": 0.56
         },
         {
             "Index": {
                 "Index OID": 55
             },
-            "Index Write Overhead": 0.1649398068996727
+            "Index Write Overhead": 0.39
         },
         {
             "Index": {
                 "Index OID": 56
             },
-            "Index Write Overhead": 0.38316579368788095
+            "Index Write Overhead": 0.08
         },
         {
             "Index": {
                 "Index OID": 57
             },
-            "Index Write Overhead": 0.3272124453835953
+            "Index Write Overhead": 0.79
         },
         {
             "Index": {
                 "Index OID": 58
             },
-            "Index Write Overhead": 0.24917996870081677
+            "Index Write Overhead": 0.11
         },
         {
             "Index": {
                 "Index OID": 59
             },
-            "Index Write Overhead": 0.16596546427991038
+            "Index Write Overhead": 0.73
         },
         {
             "Index": {
                 "Index OID": 60
             },
-            "Index Write Overhead": 0.1285199815986498
+            "Index Write Overhead": 0.79
         },
         {
             "Index": {
                 "Index OID": 61
             },
-            "Index Write Overhead": 0.15411120514897714
+            "Index Write Overhead": 0.23
         },
         {
             "Index": {
                 "Index OID": 62
             },
-            "Index Write Overhead": 0.13708526647136537
+            "Index Write Overhead": 0.93
         },
         {
             "Index": {
                 "Index OID": 63
             },
-            "Index Write Overhead": 0.18333799719912777
+            "Index Write Overhead": 0.86
         },
         {
             "Index": {
                 "Index OID": 64
             },
-            "Index Write Overhead": 0.19517811493530823
+            "Index Write Overhead": 0.17
         },
         {
             "Index": {
                 "Index OID": 65
             },
-            "Index Write Overhead": 0.3428744560386293
+            "Index Write Overhead": 0.41
         },
         {
             "Index": {
                 "Index OID": 66
             },
-            "Index Write Overhead": 0.4287608394578353
+            "Index Write Overhead": 0.07
         },
         {
             "Index": {
                 "Index OID": 67
             },
-            "Index Write Overhead": 0.46504045806192373
+            "Index Write Overhead": 0.91
         },
         {
             "Index": {
                 "Index OID": 68
             },
-            "Index Write Overhead": 0.43331898592109264
+            "Index Write Overhead": 0.18
         },
         {
             "Index": {
                 "Index OID": 69
             },
-            "Index Write Overhead": 0.32747224504190986
+            "Index Write Overhead": 0.71
         },
         {
             "Index": {
                 "Index OID": 70
             },
-            "Index Write Overhead": 0.17051222324403453
+            "Index Write Overhead": 0.79
         },
         {
             "Index": {
                 "Index OID": 71
             },
-            "Index Write Overhead": 0.20809544077070458
+            "Index Write Overhead": 0.83
         },
         {
             "Index": {
                 "Index OID": 72
             },
-            "Index Write Overhead": 0.11932367598178849
+            "Index Write Overhead": 0.99
         },
         {
             "Index": {
                 "Index OID": 73
             },
-            "Index Write Overhead": 0.33016002122978505
+            "Index Write Overhead": 0.23
         },
         {
             "Index": {
                 "Index OID": 74
             },
-            "Index Write Overhead": 0.3804672760443839
+            "Index Write Overhead": 0.42
         },
         {
             "Index": {
                 "Index OID": 75
             },
-            "Index Write Overhead": 0.12166857771156732
+            "Index Write Overhead": 0.68
         },
         {
             "Index": {
                 "Index OID": 76
             },
-            "Index Write Overhead": 0.391713938688813
+            "Index Write Overhead": 0.18
         },
         {
             "Index": {
                 "Index OID": 77
             },
-            "Index Write Overhead": 0.31483776661073926
+            "Index Write Overhead": 0.56
         },
         {
             "Index": {
                 "Index OID": 78
             },
-            "Index Write Overhead": 0.4757731445119382
+            "Index Write Overhead": 0.82
         },
         {
             "Index": {
                 "Index OID": 79
             },
-            "Index Write Overhead": 0.24317840962342446
+            "Index Write Overhead": 0.93
         },
         {
             "Index": {
                 "Index OID": 80
             },
-            "Index Write Overhead": 0.14596669311969662
+            "Index Write Overhead": 0.97
         },
         {
             "Index": {
                 "Index OID": 81
             },
-            "Index Write Overhead": 0.39274498530152446
+            "Index Write Overhead": 0.7
         },
         {
             "Index": {
                 "Index OID": 82
             },
-            "Index Write Overhead": 0.3577187002429054
+            "Index Write Overhead": 0.61
+        },
+        {
+            "Index": {
+                "Index OID": 83
+            },
+            "Index Write Overhead": 0.99
+        },
+        {
+            "Index": {
+                "Index OID": 84
+            },
+            "Index Write Overhead": 0.36
+        },
+        {
+            "Index": {
+                "Index OID": 85
+            },
+            "Index Write Overhead": 0.07
+        },
+        {
+            "Index": {
+                "Index OID": 86
+            },
+            "Index Write Overhead": 0.12
+        },
+        {
+            "Index": {
+                "Index OID": 87
+            },
+            "Index Write Overhead": 0.18
+        },
+        {
+            "Index": {
+                "Index OID": 88
+            },
+            "Index Write Overhead": 0.99
+        },
+        {
+            "Index": {
+                "Index OID": 89
+            },
+            "Index Write Overhead": 0.48
+        },
+        {
+            "Index": {
+                "Index OID": 90
+            },
+            "Index Write Overhead": 0.51
+        },
+        {
+            "Index": {
+                "Index OID": 91
+            },
+            "Index Write Overhead": 0.09
+        },
+        {
+            "Index": {
+                "Index OID": 92
+            },
+            "Index Write Overhead": 0.48
+        },
+        {
+            "Index": {
+                "Index OID": 93
+            },
+            "Index Write Overhead": 0.44
+        },
+        {
+            "Index": {
+                "Index OID": 94
+            },
+            "Index Write Overhead": 0.38
         }
     ]
 }

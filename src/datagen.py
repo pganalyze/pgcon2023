@@ -18,8 +18,8 @@ NUM_INDEXES_MIN = 50          # Minimum number of possible indexes
 NUM_INDEXES_MAX = 100         # Maximum number of possible indexes
 NUM_EXISTING_INDEXES_MIN = 1  # Minimum number of existing indexes
 NUM_EXISTING_INDEXES_MAX = 3  # Maximum number of existing indexes
-IWO_MIN = 0.1                 # Minimum IWO of an index
-IWO_MAX = 0.5                 # Maximum IWO of an index
+IWO_MIN = 0.01                # Minimum IWO of an index
+IWO_MAX = 1                   # Maximum IWO of an index
 FRAC_SCANS_COV_MIN = 0.1      # Minimum fraction of the scans covered by an index
 FRAC_SCANS_COV_MAX = 0.25     # Maximum fraction of the scans covered by an index
 
@@ -74,8 +74,8 @@ def generate_instance(filename,
 
     for scan in range(num_scans):
         data["Scans"].append({"Scan ID": f"Scan {scan}",
-                              "Sequential Scan Cost": random.uniform(scan_read_cost_min,
-                                                                     scan_read_cost_max),
+                              "Sequential Scan Cost": round(random.uniform(scan_read_cost_min,
+                                                                           scan_read_cost_max), 2),
                               "Existing Index Costs": [],
                               "Possible Index Costs": []})
 
@@ -83,13 +83,13 @@ def generate_instance(filename,
         """Add index `index` of type "Possible" or "Existing"."""
         assert index_type in ("Possible", "Existing")
         data[f"{index_type} Indexes"].append({"Index": {"Index OID": index},
-                                              "Index Write Overhead": random.uniform(iwo_min,
-                                                                                     iwo_max)})
+                                              "Index Write Overhead": round(random.uniform(iwo_min,
+                                                                                           iwo_max), 2)})
 
         # Scans covered by this index
         covered = random.sample(range(num_scans),
-                                round(num_scans * random.uniform(frac_scans_cov_min,
-                                                                 frac_scans_cov_max)))
+                                round(num_scans * round(random.uniform(frac_scans_cov_min,
+                                                                       frac_scans_cov_max), 2)))
         for scan in covered:
             # The read cost should always be strictly worse than the cost of the index
             read_cost = data["Scans"][scan]["Sequential Scan Cost"]
@@ -100,8 +100,8 @@ def generate_instance(filename,
 
             data["Scans"][scan][f"{index_type} Index Costs"].append(
                 {"Index OID": index,
-                 "Cost": random.uniform(scan_index_cost_min,
-                                        max_cost)})
+                 "Cost": round(random.uniform(scan_index_cost_min,
+                                              max_cost), 2)})
 
     # Add possible indexes
     num_possible_indexes = random.randint(num_indexes_min, num_indexes_max)
