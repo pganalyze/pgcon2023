@@ -9,21 +9,22 @@ import sys
 # IMPORTANT: All values below (except for FRAC_SCANS_COV_*) must be integers.
 
 
-SEED = None                # Leave to None to get a random seed every time
+SEED = None                   # Leave to None to get a random seed every time
 
-NUM_SCANS_MIN = 40         # Minimum number of scans
-NUM_SCANS_MAX = 60         # Maximum number of scans
-SCAN_INDEX_COST_MIN = 10   # Minimum scan cost that can be provided by an index
-SCAN_INDEX_COST_MAX = 100  # Maximum scan cost that can be provided by an index
-SCAN_READ_COST_MIN = 150   # Minimum scan read cost
-SCAN_READ_COST_MAX = 300   # Maximum scan read cost
-
-NUM_INDEXES_MIN = 50       # Minimum number of indexes
-NUM_INDEXES_MAX = 100      # Maximum number of indexes
-IWO_MIN = 10               # Minimum IWO of an index
-IWO_MAX = 30               # Maximum IWO of an index
-FRAC_SCANS_COV_MIN = 0.1   # Minimum fraction of the scans covered by an index
-FRAC_SCANS_COV_MAX = 0.25  # Maximum fraction of the scans covered by an index
+NUM_SCANS_MIN = 40            # Minimum number of scans
+NUM_SCANS_MAX = 60            # Maximum number of scans
+SCAN_INDEX_COST_MIN = 10      # Minimum scan cost that can be provided by an index
+SCAN_INDEX_COST_MAX = 100     # Maximum scan cost that can be provided by an index
+SCAN_READ_COST_MIN = 150      # Minimum scan read cost
+SCAN_READ_COST_MAX = 300      # Maximum scan read cost
+NUM_INDEXES_MIN = 50          # Minimum number of possible indexes
+NUM_INDEXES_MAX = 100         # Maximum number of possible indexes
+NUM_EXISTING_INDEXES_MIN = 1  # Minimum number of existing indexes
+NUM_EXISTING_INDEXES_MAX = 3  # Maximum number of existing indexes
+IWO_MIN = 10                  # Minimum IWO of an index
+IWO_MAX = 30                  # Maximum IWO of an index
+FRAC_SCANS_COV_MIN = 0.1      # Minimum fraction of the scans covered by an index
+FRAC_SCANS_COV_MAX = 0.25     # Maximum fraction of the scans covered by an index
 
 
 def generate_instance(filename,
@@ -36,6 +37,8 @@ def generate_instance(filename,
                       scan_read_cost_max,
                       num_indexes_min,
                       num_indexes_max,
+                      num_existing_indexes_min,
+                      num_existing_indexes_max,
                       iwo_min,
                       iwo_max,
                       frac_scans_cov_min,
@@ -52,6 +55,8 @@ def generate_instance(filename,
     assert isinstance(scan_read_cost_max, int)
     assert isinstance(num_indexes_min, int)
     assert isinstance(num_indexes_max, int)
+    assert isinstance(num_existing_indexes_min, int)
+    assert isinstance(num_existing_indexes_max, int)
     assert isinstance(iwo_min, int)
     assert isinstance(iwo_max, int)
 
@@ -60,11 +65,13 @@ def generate_instance(filename,
     assert 0 < scan_read_cost_min <= scan_read_cost_max
     assert scan_index_cost_min < scan_read_cost_max
     assert 0 < num_indexes_min <= num_indexes_max
+    assert 0 <= num_existing_indexes_min <= num_existing_indexes_max
     assert 0 < iwo_min <= iwo_max
     assert 0 < frac_scans_cov_min <= frac_scans_cov_max <= 1
 
     data = {"Scans": [],
-            "Indexes": []}
+            "Existing Indexes": [],
+            "Possible Indexes": []}
 
     num_scans = random.randint(num_scans_min, num_scans_max)
 
@@ -72,13 +79,15 @@ def generate_instance(filename,
         data["Scans"].append({"Scan ID": f"Scan {scan}",
                               "Sequential Scan Cost": random.randint(scan_read_cost_min,
                                                                      scan_read_cost_max),
-                              "Index Costs": []})
+                              "Existing Index Costs": [],
+                              "Possible Index Costs": []})
 
-    num_indexes = random.randint(num_indexes_min, num_indexes_max)
-
-    for index in range(num_indexes):
-        data["Indexes"].append({"Index OID": f"Index {index}",
-                                "Index Write Overhead": random.randint(iwo_min, iwo_max)})
+    def _add_index(index, index_type):
+        """Add index `index` of type "Possible" or "Existing"."""
+        assert index_type in ("Possible", "Existing")
+        data[f"{index_type} Indexes"].append({"Index": {"Index OID": f"Index {index}"},
+                                              "Index Write Overhead": random.randint(iwo_min,
+                                                                                     iwo_max)})
 
         # Scans covered by this index
         covered = random.sample(range(num_scans),
@@ -92,14 +101,26 @@ def generate_instance(filename,
             else:
                 max_cost = scan_index_cost_max
 
-            data["Scans"][scan]["Index Costs"].append({"Index OID": f"Index {index}",
-                                                       "Cost": random.randint(scan_index_cost_min,
-                                                                              max_cost)})
+            data["Scans"][scan][f"{index_type} Index Costs"].append(
+                {"Index OID": f"Index {index}",
+                 "Cost": random.randint(scan_index_cost_min,
+                                        max_cost)})
+
+    # Add possible indexes
+    for index in range(random.randint(num_indexes_min, num_indexes_max)):
+        _add_index(index, "Possible")
+
+    # Add existing indexes
+    for index in range(random.randint(num_existing_indexes_min, num_existing_indexes_max)):
+        _add_index(index, "Existing")
+
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
 
 
 if __name__ == "__main__":
+    assert len(sys.argv) == 2
+
     generate_instance(sys.argv[1],
                       SEED,
                       NUM_SCANS_MIN,
@@ -110,6 +131,8 @@ if __name__ == "__main__":
                       SCAN_READ_COST_MAX,
                       NUM_INDEXES_MIN,
                       NUM_INDEXES_MAX,
+                      NUM_EXISTING_INDEXES_MIN,
+                      NUM_EXISTING_INDEXES_MAX,
                       IWO_MIN,
                       IWO_MAX,
                       FRAC_SCANS_COV_MIN,
