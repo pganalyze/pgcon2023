@@ -141,7 +141,7 @@ A sample output of the model with some comments:
 {
     "Goals": [                               // List of goals in order
         {
-            "Minimal Cost": 212              // First goal and its associated value
+            "Minimal Cost": 212.2            // First goal and its associated value
         },
         {
             "Minimal Indexes": 1             // Second goal and its associated value
@@ -150,17 +150,17 @@ A sample output of the model with some comments:
     "Scans": [                               // List of all scans
         {
             "Scan ID": "Scan A",             // Scan name
-            "Cost": 42,                      // Best cost for this scan in the solution
+            "Cost": 42.2,                    // Best cost for this scan in the solution
             "Best Covered By": "Index 3"     // Which index offers this cost to the scan
         },
         {
             "Scan ID": "Scan B",
-            "Cost": 150,
+            "Cost": 150.7,
             "Best Covered By": null          // This scan is not covered by any index
         },
         {
             "Scan ID": "Scan C",
-            "Cost": 20,
+            "Cost": 19.3,
             "Best Covered By": "Index 4"
         }
     ],
@@ -194,8 +194,8 @@ A sample output of the model with some comments:
             "Uncovered": 1                   // Number of scans not covered by any index
         },
         "Cost": {                            // Cost information
-            "Total": 212,                    // Total costs of all the scans
-            "Maximum": 150                   // Highest cost found among the scans
+            "Total": 212.2,                  // Total costs of all the scans
+            "Maximum": 150.7                 // Highest cost found among the scans
         },
         "Indexes Used": {                    // Index information
             "Total": 2,                      // Number of indexes present in the solution
@@ -203,9 +203,9 @@ A sample output of the model with some comments:
             "Possible": 1                    // Number of possible indexes present in the solution
         },
         "Index Write Overhead": {            // IWO information
-            "Total": 8,                      // Combined IWO of all the indexes present in the solution
-            "Existing": 5,                   // Combined IWO of all the existing indexes present in the solution
-            "Possible": 3                    // Combined IWO of all the possible indexes present in the solution
+            "Total": 0.81,                   // Combined IWO of all the indexes present in the solution
+            "Existing": 0.49,                // Combined IWO of all the existing indexes present in the solution
+            "Possible": 0.32                 // Combined IWO of all the possible indexes present in the solution
         }
     }
 }
