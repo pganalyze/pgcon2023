@@ -82,7 +82,7 @@ def generate_instance(filename,
     def _add_index(index, index_type):
         """Add index `index` of type "Possible" or "Existing"."""
         assert index_type in ("Possible", "Existing")
-        data[f"{index_type} Indexes"].append({"Index": {"Index OID": f"Index {index}"},
+        data[f"{index_type} Indexes"].append({"Index": {"Index OID": index},
                                               "Index Write Overhead": random.uniform(iwo_min,
                                                                                      iwo_max)})
 
@@ -99,7 +99,7 @@ def generate_instance(filename,
                 max_cost = scan_index_cost_max
 
             data["Scans"][scan][f"{index_type} Index Costs"].append(
-                {"Index OID": f"Index {index}",
+                {"Index OID": index,
                  "Cost": random.uniform(scan_index_cost_min,
                                         max_cost)})
 

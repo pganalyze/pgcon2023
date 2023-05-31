@@ -201,9 +201,12 @@ class Reader:
 
         # IWO
         statistics["Index Write Overhead"] = {}
-        statistics["Index Write Overhead"]["Total"] = self._downscale(stats.total_iwo(self, last_solution))
-        statistics["Index Write Overhead"]["Existing"] = self._downscale(stats.eind_iwo(self, last_solution))
-        statistics["Index Write Overhead"]["Possible"] = self._downscale(stats.pind_iwo(self, last_solution))
+        statistics["Index Write Overhead"]["Total"] = \
+            self._downscale(stats.total_iwo(self, last_solution))
+        statistics["Index Write Overhead"]["Existing"] = \
+            self._downscale(stats.eind_iwo(self, last_solution))
+        statistics["Index Write Overhead"]["Possible"] = \
+            self._downscale(stats.pind_iwo(self, last_solution))
 
         results["Statistics"] = statistics
 
