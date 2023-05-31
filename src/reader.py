@@ -160,6 +160,20 @@ class Reader:
         # Coverage
         statistics["Coverage"] = {}
         statistics["Coverage"]["Total"] = stats.total_coverage(self, last_solution)
+
+        eind_coverage = 0
+        pind_coverage = 0
+        for scan in range(self.get_num_scans()):
+            covered_by = stats.best_covered_by(self,
+                                               last_solution,
+                                               scan)
+            if covered_by is not None and covered_by < self.get_num_eind():
+                eind_coverage += 1
+            elif covered_by is not None and covered_by >= self.get_num_eind():
+                pind_coverage += 1
+        statistics["Coverage"]["Existing"] = eind_coverage
+        statistics["Coverage"]["Possible"] = pind_coverage
+
         statistics["Coverage"]["Uncovered"] = self.get_num_scans() - \
             stats.total_coverage(self,
                                  last_solution)
@@ -172,10 +186,14 @@ class Reader:
         # Indexes
         statistics["Indexes Used"] = {}
         statistics["Indexes Used"]["Total"] = stats.num_indexes_used(last_solution)
+        statistics["Indexes Used"]["Existing"] = sum(last_solution[:self.get_num_eind()])
+        statistics["Indexes Used"]["Possible"] = sum(last_solution[self.get_num_eind():])
 
         # IWO
         statistics["Index Write Overhead"] = {}
         statistics["Index Write Overhead"]["Total"] = stats.total_iwo(self, last_solution)
+        statistics["Index Write Overhead"]["Existing"] = stats.eind_iwo(self, last_solution)
+        statistics["Index Write Overhead"]["Possible"] = stats.pind_iwo(self, last_solution)
 
         results["Statistics"] = statistics
 
@@ -283,7 +301,7 @@ class Reader:
             rules = {}
 
         # Default rules if omitted (unconstrained)
-        if "Maximum Number of Indexes" in rules:
+        if "Maximum Number of Possible Indexes" in rules:
             # If the maximum number of possible indexes is <= 0, there is no solution
             assert rules["Maximum Number of Possible Indexes"] >= 1
             self._settings["Maximum Number of Possible Indexes"] = \

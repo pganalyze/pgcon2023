@@ -10,6 +10,6 @@
     ],
     "Rules":
     {
-        "Maximum Number of Indexes": 3
+        "Maximum Number of Possible Indexes": 3
     }
 }

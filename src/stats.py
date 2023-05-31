@@ -26,6 +26,20 @@ def total_iwo(rdr,
     return sum(used * rdr.get_index_iwo()[idx] for idx, used in enumerate(solution))
 
 
+def eind_iwo(rdr,
+             solution):
+    """Return the index write overhead of the solution (existing indexes)."""
+    return sum(used * rdr.get_index_iwo()[idx]
+               for idx, used in enumerate(solution[:rdr.get_num_eind()]))
+
+
+def pind_iwo(rdr,
+             solution):
+    """Return the index write overhead of the solution (possible indexes)."""
+    return sum(used * rdr.get_index_iwo()[idx]
+               for idx, used in enumerate(solution) if idx >= rdr.get_num_eind())
+
+
 def num_indexes_used(solution):
     """Return the number of indexes used in the solution."""
     return sum(solution)

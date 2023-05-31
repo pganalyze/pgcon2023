@@ -70,7 +70,7 @@ Goals are the main components that guide the model towards a solution. A combina
 
 Two rules can be enforced by the model.
 
-**Maximum Number of Indexes**: Do not select more than X indexes.
+**Maximum Number of Possible Indexes**: Do not select more than X possible indexes.
 
 **Maximum IWO**: The combined IWO of the selected indexes may not be higher than X.
 
@@ -118,18 +118,18 @@ Suppose that the settings are as follows:
     ],
     "Rules":
     {
-        "Maximum Number of Indexes": 4
+        "Maximum Number of Possible Indexes": 4
     }
 }
 ```
 
-In other words: *The combined costs of the scans should be within a 10% margin of the best possible costs. Use as little IWO to achieve this. Up to 4 indexes may be used for that purpose.*
+In other words: *The combined costs of the scans should be within a 10% margin of the best possible costs. Use as little IWO to achieve this. Up to 4 possible indexes may be used for that purpose.*
 
 The solving process will be as follows:
 
 ```txt
 1. Find the lowest combined costs of the scans that can be achieved by using no more than 4 indexes.
-2. Find a combination of up to 4 indexes that can offer combined scan costs no worse than 110% of what was found in (1), that use a little IWO as possible.
+2. Find a combination of up to 4 possible indexes that can offer combined scan costs no worse than 110% of what was found in (1), that use a little IWO as possible.
 ```
 
 
@@ -161,15 +161,20 @@ A sample output of the model with some comments:
         {
             "Scan ID": "Scan C",
             "Cost": 20,
-            "Best Covered By": "Index 3"
+            "Best Covered By": "Index 4"
         }
     ],
     "Indexes": {
-        "Existing Indexes": [],              // List of all existing indexes (not implemented yet)
+        "Existing Indexes": [                // List of all existing indexes
+            {
+                "Index OID": "Index 4",      // Index name
+                "Selected": true             // Is this index selected in the solution?
+            },
+        ],
         "Possible Indexes": [                // List of all possible indexes
             {
-                "Index OID": "Index 1",      // Index name
-                "Selected": false            // Is this index selected in the solution?
+                "Index OID": "Index 1",
+                "Selected": false
             },
             {
                 "Index OID": "Index 2",
@@ -184,6 +189,8 @@ A sample output of the model with some comments:
     "Statistics": {                          // List of statistics
         "Coverage": {                        // Coverage information
             "Total": 2,                      // Number of scans convered by indexes
+            "Existing": 1,                   // Number of scans best convered by existing indexes
+            "Possible": 1,                   // Number of scans best convered by possible indexes
             "Uncovered": 1                   // Number of scans not covered by any index
         },
         "Cost": {                            // Cost information
@@ -191,10 +198,14 @@ A sample output of the model with some comments:
             "Maximum": 150                   // Highest cost found among the scans
         },
         "Indexes Used": {                    // Index information
-            "Total": 1                       // Number of indexes present in the solution
+            "Total": 2,                      // Number of indexes present in the solution
+            "Existing": 1,                   // Number of existing indexes present in the solution
+            "Possible": 1                    // Number of possible indexes present in the solution
         },
         "Index Write Overhead": {            // IWO information
-            "Total": 8                       // Combined IWO of all the indexes present in the solution
+            "Total": 8,                      // Combined IWO of all the indexes present in the solution
+            "Existing": 5,                   // Combined IWO of all the existing indexes present in the solution
+            "Possible": 3                    // Combined IWO of all the possible indexes present in the solution
         }
     }
 }
