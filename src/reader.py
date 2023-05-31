@@ -56,7 +56,7 @@ class Reader:
 
     def get_index_oid(self, index):
         """Return the OID of an index, None if the index is None."""
-        if index is not None:  # TODO: check this again
+        if index is not None:
             return self._translation["Index OIDs"][index]
         return None
 

@@ -64,7 +64,7 @@ def best_covered_by(rdr,
             min_value = index_costs[idx][scan]
             best_coverage = idx
 
-    return best_coverage
+    return best_coverage  # None if the scan is not covered in the solution
 
 
 def cost_of_scan(rdr,
