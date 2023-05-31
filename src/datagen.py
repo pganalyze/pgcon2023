@@ -6,9 +6,6 @@ import random
 import sys
 
 
-# IMPORTANT: All values below (except for FRAC_SCANS_COV_*) must be integers.
-
-
 SEED = None                   # Leave to None to get a random seed every time
 
 NUM_SCANS_MIN = 40            # Minimum number of scans

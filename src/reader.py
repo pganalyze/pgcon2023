@@ -14,6 +14,8 @@ class Reader:
     _solutions = {}     # All intermediary solutions
     _translation = {}   # Correspondence between string IDs and their associated integer indices
 
+    _multiplier = 100
+
     # Default optimizer settings
     _maximum_num_indexes = None  # Maximum number of indexes allowed
     _maximum_iwo = None          # Maximum IWO allowed
@@ -36,12 +38,12 @@ class Reader:
         """For pretty printing the Reader object."""
         pretty = f"""
         Number of scans: {self.get_num_scans()}
-        Sequential costs: {' '.join(str(x) for x in self.get_read_costs())}
+        Sequential costs: {' '.join(str({self._downscale(x)}) for x in self.get_read_costs())}
         Number of indexes: {self.get_num_indexes()} ({self.get_num_eind()} existing, {self.get_num_pind()} possible)
-        Index IWOs: {' '.join(str(x) for x in self._problem['Index IWOs'])}
+        Index IWOs: {' '.join(str({self._downscale(x)}) for x in self._problem['Index IWOs'])}
         Index/scan cost matrix:\n"""
         for row in self._problem["Index Costs (R)"]:
-            pretty += f"{' '*8}{' '.join(str(x) for x in row)}\n"
+            pretty += f"{' '*8}{' '.join(str({self._downscale(x)}) for x in row)}\n"
         pretty += f"\n{' '*8}Goals:\n"
         for goal in self._settings["Goals"]:
             pretty += f"{' '*8}{goal['Name']}: {goal['Strictness']}\n"
@@ -49,6 +51,14 @@ class Reader:
         for rule, value in self._settings["Rules"].items():
             pretty += f"{' '*8}{rule}: {value}\n"
         return pretty
+
+    def _upscale(self, value):
+        """Upscale the value w.r.t. the multiplier."""
+        return round(value * self._multiplier)
+
+    def _downscale(self, value):
+        """Downscale the value w.r.t. the multiplier."""
+        return round(value / self._multiplier)
 
     def get_scan_id(self, scan):
         """Return the ID of a scan."""
@@ -228,23 +238,25 @@ class Reader:
         # Extract relevant data from the scans
         for scan in problem["Scans"]:
             scan_idx = self._translation["Scan IDs"].index(scan["Scan ID"])
-            scan_sequential_cost = scan["Sequential Scan Cost"]
+            scan_sequential_cost = self._upscale(scan["Sequential Scan Cost"])
             self._problem["Sequential Scan Costs"][scan_idx] = scan_sequential_cost
 
             for index in scan["Existing Index Costs"] + scan["Possible Index Costs"]:
                 index_idx = self._translation["Index OIDs"].index(index["Index OID"])
 
+                cost = self._upscale(index["Cost"])
+
                 # If the index cost is not better than the sequential scan cost, ignore it
-                if index["Cost"] >= scan_sequential_cost:
+                if cost >= scan_sequential_cost:
                     continue
 
                 # If we reach this point, the cost offered by the index is good for this scan
-                self._problem["Index Costs"][index_idx][scan_idx] = index["Cost"]
+                self._problem["Index Costs"][index_idx][scan_idx] = cost
 
         # Extract relevant data from the indexes
         for index in problem["Existing Indexes"] + problem["Possible Indexes"]:
             index_idx = self._translation["Index OIDs"].index(index["Index"]["Index OID"])
-            self._problem["Index IWOs"][index_idx] = index["Index Write Overhead"]
+            self._problem["Index IWOs"][index_idx] = self._upscale(index["Index Write Overhead"])
 
         # Build the index cost matrices of type B (a covered scan has a cost of 1, an uncovered scan
         # has a cost of 0)
@@ -310,8 +322,10 @@ class Reader:
             self._settings["Maximum Number of Possible Indexes"] = self.get_num_pind()
 
         if "Maximum IWO" in rules:
-            assert rules["Maximum IWO"] >= 1  # If the maximum IWO is <= 0, there is no solution
-            self._settings["Maximum IWO"] = rules["Maximum IWO"]
+            # If the maximum IWO is lower than the combined IWO of the existing indexes, no solution
+            # exists
+            assert self._upscale(rules["Maximum IWO"]) > sum(self._problem["Index IWOs"][self.get_num_eind()])
+            self._settings["Maximum IWO"] = self._upscale(rules["Maximum IWO"])
         else:
             self._settings["Maximum IWO"] = sum(self._problem["Index IWOs"])
 
