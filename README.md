@@ -151,7 +151,7 @@ A sample output of the model with some comments:
         {
             "Scan ID": "Scan A",             // Scan name
             "Cost": 42.2,                    // Best cost for this scan in the solution
-            "Best Covered By": "Index 3"     // Which index offers this cost to the scan
+            "Best Covered By": 3             // Which index offers this cost to the scan
         },
         {
             "Scan ID": "Scan B",
@@ -161,27 +161,27 @@ A sample output of the model with some comments:
         {
             "Scan ID": "Scan C",
             "Cost": 19.3,
-            "Best Covered By": "Index 4"
+            "Best Covered By": 4
         }
     ],
     "Indexes": {
         "Existing Indexes": [                // List of all existing indexes
             {
-                "Index OID": "Index 4",      // Index name
+                "Index OID": 4,              // Index name
                 "Selected": true             // Is this index selected in the solution?
             },
         ],
         "Possible Indexes": [                // List of all possible indexes
             {
-                "Index OID": "Index 1",
+                "Index OID": 1,
                 "Selected": false
             },
             {
-                "Index OID": "Index 2",
+                "Index OID": 2,
                 "Selected": false
             },
             {
-                "Index OID": "Index 3",
+                "Index OID": 3,
                 "Selected": true
             }
         ]
