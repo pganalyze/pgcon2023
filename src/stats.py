@@ -121,10 +121,10 @@ def compute_objective(rdr,
         return total_coverage(rdr, solution)
 
     if goal_name == "Minimal IWO":
-        return total_iwo(rdr, solution)
+        return total_iwo(rdr, solution) / 100  # TODO: Directly get the multiplier instead
 
     if goal_name == "Minimal Indexes":
         return num_indexes_used(solution)
 
     if goal_name == "Minimal Cost":
-        return total_cost(rdr, solution)
+        return total_cost(rdr, solution) / 100  # TODO: Directly get the multiplier instead
