@@ -6,6 +6,8 @@ Creating indexes on a table in order to meet some requirements (performance, res
 
 We (pganalyze) are sharing this model in an effort to further the discussion about automating Postgres index selection within the broader Postgres community. A more sophisticated variant of this model is available with the [pganalyze Indexing Engine](https://pganalyze.com/docs/indexing-engine), which you can utilize as part of the Index Advisor available in [pganalyze](https://pganalyze.com/).
 
+⭐️ **Note:** To run this model end-to-end in a development environment, we recommend taking a look at [pganalyze_lint](https://github.com/pganalyze/lint/tree/main), which takes care of passing the right inputs to the model based on your local query workload.
+
 
 ## Getting Started
 
